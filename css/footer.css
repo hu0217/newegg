@@ -1,0 +1,47 @@
+.wrap{
+	width:960px;
+	margin:0 auto;
+}
+.footer{
+	text-align: center;
+	padding:80px 0 30px;
+}
+.footer .item1,.footer .item2,.footer .item3,.footer .item4,.footer .item5{
+	display: inline-block;
+    background: url(../images/certi20150925.png) no-repeat;
+    height: 45px;
+    font-size: 0;
+    margin: 0 3px 10px 2px;
+}
+.footer .item1{
+	background-position: left 0;
+    width: 123px;
+}
+.footer .item2{
+	background-position: left -92px;
+    width: 116px;
+}
+.footer .item3{
+	background-position: left -276px;
+    width: 130px;
+}
+.footer .item4{
+	background-position: left -326px;
+    width: 127px;
+}
+.footer .item5{
+	background-position: left -376px;
+    width: 106px;
+}
+.footer span{
+	margin:0 2px;
+}
+.footer p{
+	padding:0 0 10px;
+}
+.footer p a{
+	color:#666;
+}
+.footer p a:hover{
+	text-decoration: underline;
+}

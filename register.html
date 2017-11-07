@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/gVerify.js"></script>
+    <script src="js/register.js"></script>
+</head>
+<body>
+
+    <!--top-->
+    <div class="all"> 
+        <div class="top wrap">
+            <ul class="fl topnav">
+                <li><a href="#" class="phone" id="phone">掌上新蛋</a></li>
+                <li><a href="#" class="groupbuy" id="groupbuy">企业团购</a></li>
+                <li><a href="#" class="openflat" id="openflat">入驻开放平台</a></li>
+            </ul>
+            <div class="fr">
+                    <span class="mr10 fl ">
+                        <span class="ml10">欢迎来新蛋购物！</span>
+                    </span>
+                <ul class="topnav fr">
+                    <li><a href="#">帮助中心</a></li>
+                    <li id="khfw">
+                        <a href="#" class="s">客户服务<s></s></a>
+                        <div class="call-us">
+                            <p class="tel">400-820-4400</p>
+                            <p>021-67072999</p>
+                            <p>每天&nbsp; 9:00-18:00</p>
+                            <a href="#">在线咨询</a>
+                            <a href="#">邮件我们</a>
+                            <a href="#" class="yy">预约来电</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="logo wrap clearfix">
+        <a href="index.html" class="logopic fl"><img src="images/logocn.png"/></a>
+        <div class="welcome_login">
+            新用户注册
+        </div>
+    </div>
+
+    <!--top结束-->
+    <!--register开始-->
+    <div class="register">
+    	<div class="wrap clearfix friend_link">
+			<div class="fr">
+				已是新蛋会员，现在
+				<a href="login.html" target="_blank" class="red">登录</a>
+			</div>
+		</div>
+		<!--step1-->
+		<div id="step1">
+			
+			<div class="wrap">
+				<div class="step0"></div>
+				<div class="register-con">
+					<div class="register-con-box">
+						<label for="telphone">手机号码</label>：
+						<input type="text" id="telphone" />
+						<em id="phone_tip"></em>
+						
+					</div>
+					<div class="register-con-box">
+						<label for="pic">图形验证码</label>：
+						<input type="text" id="pic" />
+						<span class="code" id="v_container"></span>
+						<a href="javascript:;" class="change-code" id="change_code">
+							看不清，换一张
+
+						</a>
+						<em id="pic_tip"></em>
+					</div>
+					<!--<div class="register-con-box">
+						<a href="javascript:void(0);" class="yzm">获取短信验证码</a>
+					</div>
+                    <div class="register-con-box box4">
+                        <label for="">短信验证码</label>：
+                        <input type="text" name="">
+                        <span><i>10</i>秒后重新获取</span>
+                        <a href="#">已发送一条动态验证码短信，请查收。</a>
+                    </div>-->
+                    <div class="register-con-box box5" id="next">
+                        下一步
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!--step2-->
+        <div class="step2" id="step_2">
+        	<div class="wrap">
+        		<div class="step2-1"></div>
+        		<div class="login-password">
+	                <label for="password">登录密码</label>：
+	                <input type="password" id="password">
+	                <em id="passward_tip"></em>
+	            </div>
+	            <div class="password">
+	                <label for="makesure">确认密码</label>：
+	                <input type="password" id="makesure">
+	                <em id="passwardrepeat_tip"></em>
+	            </div>
+	            <div class="ready"><input type="checkbox" name="" id="read">我已阅读同意<span>《新蛋用户注册协议》</span></div>
+	            <div class="zhuce" id="zhuce">
+	                	注册
+	            </div>
+        	</div>
+            
+        </div>
+		<!--step3-->
+        <div class="step3" id="step_3">
+        	<div class="wrap" style="position:relative;">
+        		<div class="step3-1"></div>
+        		<div class="gongxi"><img src="images/congratulate.png" alt="">恭喜,您已成功注册中国新蛋网。</div>
+	            <a href="index.html">开始购物></a>
+	            <a href="#">完善个人信息></a>
+	            <p>验证邮箱可以帮您快速找回密码，并可以接受优惠信息，促销活动，降价提醒等消息。</p>
+	            <div class="email">
+	                <img src="images/e-mail_icon.png" alt="">绑定邮箱
+	                <input type="text" name="">
+	                <a href="login.html">确定</a>
+	            </div>
+	            <img src="images/code.jpg" alt="" class="codeimg">
+        	</div>
+            
+        </div>
+    </div>
+     <!--register结束-->
+    <!--footer开始-->
+    <div class="footer wrap">
+        <a href="#" class="item1"></a>
+        <a href="#" class="item2"></a>
+        <a href="#" class="item3" style="position: relative;">
+            <span style="position: absolute;font-size:12px;bottom: 4px;left: 41px;color: #001b75;">3103108092</span>
+        </a>
+        <a href="#" class="item4"></a>
+        <a href="#" class="item5"></a>
+        <p>
+            新蛋集团网站：
+            <a href="#" class="ml5" style="color:#484848;">美国新蛋</a>
+            <a href="#" class="ml10" style="color:#484848;">中国新蛋</a>
+            <a href="#" class="ml10" style="color:#484848;">加拿大新蛋</a>
+            <a href="#" class="ml10" style="color:#484848;">新蛋软件</a>
+        </p>
+        <p>&copy;&nbsp;2001-2017 新蛋商贸（上海）有限公司 &nbsp;版权所有&nbsp; <a href="#">沪ICP备:16033615</a></p>
+    </div>
+    <!--footer结束-->
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+.register{
+    height: 491px;
+    background: #F9F9F9;
+    overflow: hidden;
+}
+.register .friend_link{
+	height: 30px;
+    line-height: 30px;
+}
+.register .red{
+	color: #fe0000;
+}
+.register .step0{
+	margin: 20px auto; 
+    background: url('../images/register_step.png') no-repeat center;
+    width: 655px;
+    height: 30px;
+    background-position: 0 0;
+    display: block;
+}
+.register-con{
+	margin-top:40px;
+	text-align: center;
+	position: relative;
+    /*display: none;*/
+}
+.register-con-box{
+	text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+.register-con-box label{
+	display: inline-block;
+    width: 66px;
+    text-align: left;
+    cursor: default;
+}
+.register input{
+	outline-color: #f60;
+}
+#telphone{
+	height: 30px;
+    width: 255px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    text-indent: 5px;
+    overflow: hidden;
+    background: #F9F9F9;
+}
+#phone_tip{
+	position: relative;
+	color:#f60;
+	left:4px;
+	
+}
+#pic{
+	height: 30px;
+    width: 130px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    text-indent: 5px;
+    overflow: hidden;
+    background: #F9F9F9;
+    vertical-align: middle;
+    margin-right: 5px;
+    text-align: center;
+}
+.code{
+	display: inline-block;
+    height: 32px;
+    width: 115px;
+    font-size:20px;
+    vertical-align: middle;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    line-height: 32px;
+}
+a{
+	color:#666;
+}
+a:hover{
+	text-decoration: none;
+}
+.change-code{
+	position: absolute;
+    top: 8px;
+}
+.change-code:hover{
+	text-decoration: underline;
+}
+#pic_tip{
+	position: relative;
+	left:100px;
+	color:#f60;
+}
+em{
+	color:#f60;
+}
+.yzm{
+	width: 250px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #868686;
+    cursor: pointer;
+    background: #E1E1E1;
+    margin-left: 391px;
+    display: block;
+}
+
+
+/*#######################*/
+.box4 {
+    margin-left: 206px;
+    /*display: none;*/
+}
+.box4 input {
+    height: 30px;
+    width: 130px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    text-indent: 5px;
+    overflow: hidden;
+    background: #F9F9F9;
+    vertical-align: middle;
+    margin-right: 5px;
+    text-align: center;
+}
+.box4 span {
+    display: inline-block;
+    height: 32px;
+    width: 115px;
+    vertical-align: middle;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    line-height: 32px;
+}
+.box5 {
+    width: 246px;
+    height: 34px;
+    background: #ff7600;
+    text-align: center;
+    line-height: 34px;
+    margin: 0 390px;
+    cursor: pointer;
+    color: #fff;
+    /*display: none;*/
+}
+
+.step2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #333;
+    display: none;     /* 隐藏第二个  */
+}
+.register .step2-1{
+	margin: 20px auto; 
+    background: url('../images/register_step.png') no-repeat center;
+    width: 655px;
+    height: 30px;
+    background-position: 0 -75px;
+    display: block;
+}
+.login-password input {
+    width: 300px;
+    height: 28px;
+    text-indent: 5px;
+}
+.password {
+    margin-top: 30px;
+}
+
+.password input {
+    width: 300px;
+    height: 28px;
+    text-indent: 5px;
+}
+.ready {
+    margin-top: 30px;
+    font-size: 12px;
+}
+.ready input {
+    display: inline-block;
+    line-height: 28px;
+    vertical-align: middle;
+}
+.ready span {
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+}
+.zhuce {
+    width: 300px;
+    height: 34px;
+    background: #ff7600;
+    color: #fff;
+    margin: 30px auto 0 auto;
+    line-height: 34px;
+    cursor: pointer
+    text-indent: 5px;
+}
+.step3 {
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    display:none;
+}
+
+.register .step3-1{
+	margin: 20px auto; 
+    background: url('../images/register_step.png') no-repeat center;
+    width: 655px;
+    height: 30px;
+    background-position: 0 -150px;
+    display: block;
+}
+.gongxi {
+    font-size: 20px;
+    line-height: 40px;
+}
+.gongxi img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.step3 a {
+    display: block;
+    width: 325px;
+    height: 15px;
+    margin: 10px auto;
+    text-align: left;
+    color: #F55B18;
+    text-decoration: none;
+}
+.step3 p {
+    margin-top: 50px;
+    padding-left: 130px;
+    color: #ccc;
+}
+.step3 .email {
+    margin: 20px 0 0 120px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.step3 .email img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.step3 img.codeimg{
+	position: absolute;
+	right:0;
+	top:105px;
+}
+.step3 .email input {
+    width: 257px;
+    height: 26px;
+    margin-right: 10px;
+    text-indent: 5px;
+}
+.step3 .email a {
+	text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    height: 32px;
+    text-align: center;
+    line-height:32px;
+    color: #fff;
+    font-size: 15px;
+    background: #F55B18;
+}
+.step3>img {
+    position: absolute;
+    top: 10px;
+    right: 180px;
+}

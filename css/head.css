@@ -1,0 +1,134 @@
+.all{
+	background-color: #f1f1f1;
+}
+.top{
+	height:24px;
+	line-height: 24px;
+	border-bottom: 1px solid #e2e2e2;
+	background-color: #f1f1f1;
+	margin:0 auto;
+}
+.wrap{
+	width:960px;
+	margin:0 auto;
+}
+	
+.top a{
+	color:#666;
+}
+.top a:hover{
+	text-decoration: none;
+}
+.top b{
+	margin:0 8px;
+}
+.topnav{
+	position: relative;
+}
+.topnav li{
+	float: left;
+	padding:0 5px;
+}
+.topnav .phone{
+	padding-left:16px;
+	background: url(../images/topbar.png) no-repeat 0px 3px;
+}
+.topnav .groupbuy{
+	padding-left:20px;
+	background: url(../images/topbar.png) no-repeat 0px -131px;
+}
+.topnav .openflat{
+	padding-left:16px;
+	background: url(../images/topbar.png) no-repeat 0px -89px;
+}
+#groupbuy:hover{
+	background-position:0 -156px ;
+}
+#phone:hover{
+	background-position:0 -17px ;
+}
+#openflat:hover{
+	background-position:0 -109px ;
+}
+.topnav .s s{
+	display: inline-block;
+    width: 10px;
+    height: 4px;
+    transition: all 0.5s linear;
+    background:url(../images/sprite.png) no-repeat 3px -27px;
+    overflow: hidden;
+    
+}
+
+#khfw:hover{
+	background-color: #fff;
+	border-bottom: none;
+}
+#khfw:hover a{
+	text-decoration: none;
+}
+#khfw:hover a s{
+	transform: translateY(-4px) rotate(180deg);
+}
+.login,.call-us{
+	width:100px;
+	height:24px;
+	text-align: center;
+	line-height: 24px;
+	background-color: #fff;
+	right:5px;
+	top:22px;
+	box-shadow: 2px 2px  3px #333;
+	display: none;
+	position: absolute;
+}
+.call-us{
+	height:auto;
+	width:180px;
+	line-height: 16px;
+	padding-bottom:2px;
+}
+.tel{
+	color:#f60;
+}
+.call-us a{
+	display: inline-block;
+	width:60px;
+	height:20px;
+	background: dodgerblue;
+	color:#fff;
+	text-align: center;
+	line-height: 20px;
+	margin-right:4px;
+}
+.call-us a.yy{
+	display: inline-block;
+	width:120px;
+	height:20px;
+	background: #f60;
+	color:#fff;
+	text-align: center;
+	line-height: 20px;
+	margin-top:4px;
+	margin-right:4px;
+}
+#khfw:hover .call-us{
+	display: block;
+	
+}
+.logo{
+	padding-bottom: 18px;
+    padding-top: 20px;
+}
+.logopic{
+	width:320px;
+	height:69px;
+}
+.welcome_login{
+	border-left: 1px solid #D9D9D9;
+    float: left;
+    font: 24px/49px microsoft yahei;
+    margin: 5px 0 0 25px;
+    padding-left: 26px;
+}
+

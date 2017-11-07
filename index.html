@@ -1,0 +1,3387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新蛋商城</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/move.js"></script>
+		<script src="js/slidertop.js"></script>
+		<script src="js/goods1.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<!--top开始-->
+		<div class="top">
+			<div class="wrap">
+				<ul class="fl topnav">
+					<li><a href="#" class="phone">掌上新蛋</a></li>
+					 <li><a href="#" class="groupbuy" id="groupbuy">企业团购</a></li>
+				</ul>
+				<div class="fr">
+					<span class="mr10 fl ">
+						<a href="register.html">注册</a>
+						<b>|</b>
+						<a href="login.html">登录</a>
+						<span class="ml10">上午好,欢迎来新蛋购物！</span>
+					</span>
+					<ul class="topnav fr">
+						<li><a href="#">我的订单</a></li>
+						<li id="mne" style="position:relative">
+							<a href="#" class="s">我的新蛋<s></s></a>
+							<div class="login" style="position: absolute;">
+								请&nbsp;<a href="#">登录</a>&nbsp;后查看
+							</div>
+						</li>
+						<li><a href="#">帮助中心</a></li>
+					    <li id="khfw">
+					    	<a href="#" class="s">客户服务<s></s></a>
+					    	<div class="call-us">
+					    		<p class="tel">400-820-4400</p>
+					    		<p>021-67072999</p>
+					    		<p>每天&nbsp; 9:00-18:00</p>
+					    		<a href="#">在线咨询</a>
+					    		 <a href="#">邮件我们</a>
+					    	</div>
+					    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--top结束-->
+		<!-- logo开始-->
+		<div>
+			<div class="wrap clearfix">
+				<div class="logo fl">
+					<a href="#"><img src="images/logocn.png" alt="" /></a>
+				</div>
+				<div class="search fl">
+					<input type="text"  placeholder="请输入你要搜索的关键字"/>
+					<input type="submit" value="搜索"/>
+					<p class="hot">
+						<a href="#">智能硬件</a>
+						<a href="#">iPhone8</a>
+						<a href="#">mate9</a>
+						<a href="#">Thinkpad</a>
+						<a href="#" class="no-r">电视机</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--logo结束-->
+		<!--nav开始-->
+		<div class="nav">
+			<div class="wrap menu">
+				<div class="fenlei">
+					<h3><a href="#">全部商品分类</a></h3>
+					<div class="list" id="list">
+						<ul>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class=" dropcomon drop1"></div>
+											<h4><a href="#">海外直购</a></h4>
+											<div class="det">
+												<a href="#" class="f60">影音</a>
+												<a href="#" class="f60">固态硬盘</a>
+												<a href="#">奶粉</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">数码外设</div>
+													<div class="fr">
+														<a href="#">耳机</a>|
+														<a href="#">电脑外设</a>|
+														<a href="#">手机配件</a>|
+														<a href="#" class="f60">音响</a>|
+														<a href="#">网络设备</a>|
+														<a href="#">办公设备</a>|
+														<a href="#">U盘/存储卡</a>|
+														<a href="#">解锁版手机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">电脑平板</div>
+													<div class="fr">
+														<a href="#">笔记本电脑</a>|
+														<a href="#">硬盘内存</a>|
+														<a href="#">电脑主板</a>|
+														<a href="#" class="f60">声卡显卡</a>|
+														<a href="#">笔记本电脑包</a>|
+														<a href="#">平板设备</a>|
+														<a href="#">外置硬盘</a>|
+														<a href="#">固态硬盘</a>|
+														<a href="#" class="f60">迷你主机</a>|
+														<a href="#">CPU处理器</a>|
+														<a href="#">散热设备</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">家用电器</div>
+													<div class="fr">
+														<a href="#">厨房电器</a>|
+														<a href="#">清洁电器</a>|
+														<a href="#" class="f60">个人护理</a>|
+														<a href="#">口腔清洁</a>|
+														<a href="#">生活电器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">生活百货</div>
+													<div class="fr">
+														<a href="#">男鞋女鞋</a>|
+														<a href="#">手表配件</a>|
+														<a href="#" class="f60">美妆</a>|
+														<a href="#">太阳眼镜</a>|
+														<a href="#">服饰</a>|
+														<a href="#">品牌包箱</a>|
+														<a href="#">首饰</a>|
+														<a href="#">汽车配件</a>|
+														<a href="#">文具/耗材</a>|
+														<a href="#">成人服饰</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">个人美妆</div>
+													<div class="fr">
+														<a href="#">面膜</a>|
+														<a href="#" class="f60">润肤</a>|
+														<a href="#">面部彩妆</a>|
+														<a href="#">洗发水</a>|
+														<a href="#">个人清洁</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">母婴饰品</div>
+													<div class="fr">
+														<a href="#">婴儿喂养</a>|
+														<a href="#">婴儿服饰配件</a>|
+														<a href="#">儿童玩具</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">健康保健</div>
+													<div class="fr">
+														<a href="#">营养品</a>
+													</div>
+												</div>
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p><a href="#"><img src="images/logo1.jpg" alt=""></a></p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop2"></div>
+											<h4>
+											<a href="#">手机</a>
+											<a href="#">摄影</a>
+											<a href="#">苹果</a>
+											</h4>
+											<div class="det">
+												<a href="#" class="f60">智能手机</a>
+												<a href="#">微单</a>
+												<a href="#" class="f60">数码包</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">手机</div>
+													<div class="fr">
+														<a href="#">智能手机</a>|
+														<a href="#">非智能手机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">苹果专区</div>
+													<div class="fr">
+														<a href="#"> iPhone</a>|
+														<a href="#">iPad</a>|
+														<a href="#">Watch</a>|
+														<a href="#" class="f60">iMac</a>|
+														<a href="#">Macbook</a>|
+														<a href="#">iPhone附件</a>|
+														<a href="#">iPad附件</a>|
+														<a href="#" class="f60">苹果原装配件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">家手机配件</div>
+													<div class="fr">
+														<a href="#">手机电池/充电器</a>|
+														<a href="#">手机数据线</a>|
+														<a href="#" class="f60">手机通用配件</a>|
+														<a href="#">iPhone附件</a>|
+														<a href="#">移动电源</a>|
+														<a href="#">手机耳机</a>|
+														<a href="#">蓝牙耳机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">智能配件</div>
+													<div class="fr">
+														<a href="#">智能穿戴/设备</a>|
+														<a href="#">无人机</a>|
+														<a href="#" class="f60"> 平衡机</a>|
+														<a href="#">游戏机</a>|
+														<a href="#">游戏周边</a>|
+														<a href="#">游戏手柄</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">数码摄影</div>
+													<div class="fr">
+														<a href="#">单反相机</a>|
+														<a href="#">单电/微单</a>|
+														<a href="#">镜头</a>|
+														<a href="#" class="f60">数码相机</a>|
+														<a href="#">数码摄像机</a>|
+														<a href="#">特殊相机</a>|
+														<a href="#">照片打印机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">数码附件</div>
+													<div class="fr">
+														<a href="#" class="f60">单反配件</a>|
+														<a href="#">镜头滤镜</a>|
+														<a href="#" class="f60">数码贴膜/清洁</a>|
+														<a href="#">数码包</a>|
+														<a href="#">三脚架/云台</a>|
+														<a href="#">电池充电器</a>|
+														<a href="#">存储卡</a>
+													</div>
+												</div>
+
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p>
+													<a href="#"><img src="images/apple.jpg" alt=""></a>
+
+												</p>
+
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop3"></div>
+											<h4>
+											<a href="#">电脑</a>
+											<a href="#">外设</a>
+											<a href="#">办公</a>
+											</h4>
+											<div class="det">
+												<a href="#" class="f60">笔记本</a>
+												<a href="#"  class="f60">智能硬件</a>
+												<a href="#">硬盘</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">电脑整机</div>
+													<div class="fr">
+														<a href="#">笔记本</a>|
+														<a href="#">台式机</a>|
+														<a href="#" class="f60">笔记本配件</a>|
+														<a href="#">平板配件</a>|
+														<a href="#">平板</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">电脑配件</div>
+													<div class="fr">
+														<a href="#"> 主板</a>|
+														<a href="#" class="f60">显卡</a>|
+														<a href="#">硬盘</a>|
+														<a href="#">SSD固态硬盘</a>|
+														<a href="#">机箱</a>|
+														<a href="#">电源</a>|
+														<a href="#" class="f60">显卡器</a>|
+														<a href="#">散热器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">电脑外设</div>
+													<div class="fr">
+														<a href="#">键盘</a>|
+														<a href="#">鼠标</a>|
+														<a href="#">U盘</a>|
+														<a href="#" class="f60">移动硬盘</a>|
+														<a href="#">存储卡</a>|
+														<a href="#">手绘板</a>|
+														<a href="#">插座</a>|
+														<a href="#">鼠标垫/附件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">网络设备</div>
+													<div class="fr">
+														<a href="#">路由器</a>|
+														<a href="#" class="f60">网卡</a>|
+														<a href="#">无线AP</a>|
+														<a href="#">交换机</a>|
+														<a href="#">网络配件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">音频设备</div>
+													<div class="fr">
+														<a href="#" class="f60">耳机/耳麦</a>|
+														<a href="#">音箱</a>|
+														<a href="#">手机耳机</a>|
+														<a href="#">蓝牙耳机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">智能配件</div>
+													<div class="fr">
+														<a href="#">智能穿戴/设备</a>|
+														<a href="#">无人机</a>|
+														<a href="#">平衡机</a>|
+														<a href="#" class="f60">游戏机</a>|
+														<a href="#">游戏周边</a>|
+														<a href="#">游戏手柄</a>|
+														<a href="#">智能穿戴</a>|
+														<a href="#">苹果配件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">办公设备</div>
+													<div class="fr">
+														<a href="#">量仓式打印机</a>|
+														<a href="#">激光打印机</a>|
+														<a href="#">喷墨打印机</a>|
+														<a href="#" class="f60">针式打印机</a>|
+														<a href="#">投影仪</a>|
+														<a href="#">传真机</a>|
+														<a href="#">扫描机</a>|
+														<a href="#">复印机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">打印材料</div>
+													<div class="fr">
+														<a href="#">墨盒</a>|
+														<a href="#">硒鼓/墨粉</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">办公文具</div>
+													<div class="fr">
+														<a href="#">文件管理</a>|
+														<a href="#" class="f60">常用桌面文件</a>|
+														<a href="#">书写修正用品</a>
+													</div>
+												</div>
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p><a href="#"><img src="images/logo1.jpg" alt=""></a></p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop4"></div>
+											<h4>
+											<a href="#">家用电器</a>
+											</h4>
+											<div class="det">
+												<a href="#">电饭煲</a>
+												<a href="#" class="f60">电视</a>
+												<a href="#">净水器</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">平板电视</div>
+													<div class="fr">
+														<a href="#" class="f60">40-60英寸</a>|
+														<a href="#">大于60英寸</a>|
+														<a href="#">小于40英寸</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">冰/洗/空</div>
+													<div class="fr">
+														<a href="#"> 空调</a>|
+														<a href="#">洗衣/干衣机</a>|
+														<a href="#">冰箱/冷柜</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">视听设备</div>
+													<div class="fr">
+														<a href="#">家庭影院</a>|
+														<a href="#" class="f60">迷你音响/收录机</a>|
+														<a href="#">音箱</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">家庭电器</div>
+													<div class="fr">
+														<a href="#" class="f60">取暖电器</a>|
+														<a href="#">电熨斗/挂烫机</a>|
+														<a href="#">吸尘器/清洁机</a>|
+														<a href="#">加湿器</a>|
+														<a href="#" class="f60">空气净化器</a>|
+														<a href="#">饮水机</a>|
+														<a href="#">净水设备</a>|
+														<a href="#">电风扇/空调扇</a>|
+														<a href="#">制氧机</a>|
+														<a href="#">智能马桶盖>|
+														<a href="#">驱蚊器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">个护健康</div>
+													<div class="fr">
+														<a href="#">电吹风</a>|
+														<a href="#">电动牙刷</a>|
+														<a href="#" class="f60">美容美发器</a>|
+														<a href="#">剃须/脱毛器</a>|
+														<a href="#">足浴盆</a>|
+														<a href="#">按摩器材</a>|
+														<a href="#">体重脂肪测量</a>|
+														<a href="#">电子体温计</a>|
+														<a href="#">血压计</a>|
+														<a href="#">计步器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">厨房电器</div>
+													<div class="fr">
+														<a href="#">电磁炉</a>|
+														<a href="#">电饭煲</a>|
+														<a href="#">电水壶</a>|
+														<a href="#">电压力锅</a>|
+														<a href="#" class="f60">豆浆机</a>|
+														<a href="#">多用途电锅</a>|
+														<a href="#">咖啡机</a>|
+														<a href="#">料理/榨汁机</a>|
+														<a href="#">食品加工机</a>|
+														<a href="#" class="f60">微波炉/电烤箱</a>|
+														<a href="#">酸奶机/冰淇淋机</a>|
+														<a href="#">电饼铛/煎烤机</a>|
+														<a href="#">面包机/煮蛋器</a>|
+														<a href="#">豆浆机</a>
+													</div>
+												</div>
+
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p><a href="#"><img src="images/logo1.jpg" alt=""></a></p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="last" id="last">
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop5"></div>
+											<h4>
+											<a href="#">生活百货</a>
+											</h4>
+											<div class="det1">
+												<p class="det-in">
+													<a href="#" class="f60">汽车用品</a>
+													<a href="#">个人清洁</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">汽车养护</div>
+																<div class="fr">
+																	<a href="#">汽车清洁</a>|
+																	<a href="#">保养添加剂</a>|
+																	<a href="#" class="f60">机油</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;"> 汽车配件</div>
+																<div class="fr">
+																	<a href="#" class="f60">雨刷雨刮</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">汽车装饰</div>
+																<div class="fr">
+																	<a href="#">香水除味</a>|
+																	<a href="#">功能精品</a>|
+																	<a href="#">内饰装潢</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">汽车电子</div>
+																<div class="fr">
+																	<a href="#">车载数码配件</a>|
+																	<a href="#">车载生活电器</a>|
+																	<a href="#" class="f60"> 车载电源</a>|
+																	<a href="#">蓝牙耳机</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">汽车安全</div>
+																<div class="fr">
+																	<a href="#" class="f60">照儿童安全座椅</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家庭常备</div>
+																<div class="fr">
+																	<a href="#">保健用品</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">健康电器</div>
+																<div class="fr">
+																	<a href="#">足浴盆</a>|
+																	<a href="#">按摩器材</a>|
+																	<a href="#">体重脂肪测量</a>|
+																	<a href="#">电子体温计</a>|
+																	<a href="#" class ="f60">血压计</a>|
+																	<a href="#">计步器</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">家居</a>
+													<a href="#">厨用</a>
+													<a href="#">钟表</a>
+													<a href="#">礼品</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">珠宝首饰</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">服饰</a>
+													<a href="#">女神</a>
+													<a href="#">内衣</a>
+													<a href="#">珠宝</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">女神服饰</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">母婴</a>
+													<a href="#">玩具</a>
+													<a href="#">食品</a>
+													<a href="#">酒饮</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">母婴玩具</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">鞋靴</a>
+													<a href="#">箱包</a>
+													<a href="#">运动</a>
+													<a href="#">户外</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">箱包户外</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+
+															</p>
+														</div>
+													</div>
+												</p>
+
+											</div>
+										</div>
+
+									</dt>
+
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="fl nav1">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">限时抢购</a></li>
+					<li><a href="#">团团赚</a></li>
+					<li><a href="#">海外直购</a></li>
+					<li><a href="#">智能硬件</a></li>
+					<li><a href="#">爱车配</a></li>
+					<li><a href="#">二手宝库</a></li>
+				</ul>
+				<div class="tip" id="tip">
+					<dl class="cart">
+						<dt>
+							<a href="cart.html" target="_blank">
+								购物车
+								<span id="allnum">0</span>
+								件
+								<s></s>
+							</a>
+						</dt>
+						<dd>
+							<div class="tip-iner">
+								<s class="s1"></s>
+								您还没有购买商品，快去挑选吧！
+							</div>
+							<div class="cartlist">
+								<div class="cartlist-t clearfix">
+									<em class="fr"></em>
+									<span class="fr">金额总计：</span>
+								</div>
+								<ul id="route">
+									<!--<li>
+										<p class="img">
+											<a href="javascript"><img src="images/226x241_1.jpg"  /></a>
+										</p>
+										<p class="title">dqkjwhdoihwmaoahlkhscdaoiwadiqwohd</p>
+										<p class="price">
+											<span class="price-in">￥111</span>
+											<span class="num">*1</span>
+										</p>
+										<div class="icon"></div>
+									</li>-->
+									<!--<li>
+										<p class="img">
+											<a href="javascript"><img src="images/226x241_1.jpg"  /></a>
+										</p>
+										<p class="title">dqkjwhdoihwmaoahlkhscdaoiwadiqwohd</p>
+										<p class="price">
+											<span class="price-in">￥111</span>
+											<span class="num">*1</span>
+										</p>
+										<div class="icon"></div>
+									</li>-->
+								</ul>
+								<div class="buyit">
+									<a href="cart.html">查看购物车&nbsp;&nbsp;>></a>
+									<a href="javascript:;" class="buyit-in">立即购买</a>
+								</div>
+							</div>
+							
+						</dd>
+					</dl>
+					<dl class="call">
+						<dt>
+							<a href="#">
+								收藏提醒
+								 <s></s>
+							</a>
+						</dt>
+						<dd class="tip-dd">
+							<div class="tip-iner">
+								请登录后查看
+								<a href="#">登录</a>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--nav结束-->
+		<!-- 主要内容部分开始 -->
+		<div class="wrap">
+			<!--section1-->
+			<div class="section1 clearfix">
+				<div class="fl col500">
+					<div class="topslider" id="topslider">
+						<ul id="topslider_top"></ul>
+						<ul id="topslider_bt"></ul>
+					</div>
+					<div class="time mt10">
+						<h2>限时抢购</h2>
+						<a href="#" class="more">更多抢购商品</a>
+						<div class="timeleft" id="timeleft">
+							剩余时间：
+							<span class="hour">00</span>:
+							<span class="min">00</span>:
+							<span class="sec">00</span>
+						</div>
+						<div class="botslider">
+							<div class="botslider-in" id="botslider-in">
+								<div class="botslider-iner" id="botslider-iner_1">
+									<ul class="adlist clearfix">
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A23-150-27H.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">TP-LINK 普联 TL-WDR5800 900M 11AC双频无线路由</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥169.00</span>
+											</p>
+										</li>
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A53-5Y4-0NV.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">西门子/SIEMENS/ 9公斤大容量全触屏滚筒洗衣机WM1</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥5999.00</span>
+											</p>
+										</li>
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A04-5LF-662.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">SONY 索尼 FDR-AX40 4K高清数码摄像机 64G内存 5轴</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥5190.00</span>
+											</p>
+										</li>
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A6M-4XM-03T.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">Bose QuietComfort 35 无线耳机 银色 QC35 头戴式 蓝牙 耳麦 降噪耳机 蓝牙耳机</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥2329.00</span>
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div class="botslider-iner" id="botslider-iner_2">
+									<ul class="adlist clearfix">
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A31-2PF-6FS.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">Buydeem 北鼎 K185 燕窝炖养生壶 预约养生壶 全自</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥1799.00</span>
+											</p>
+										</li>
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A55-2G3-2EZN01.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">乐为家纺 加厚纯色印花冬被透气保暖被子被芯 珍珠白 2</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥179.00</span>
+											</p>
+										</li>
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A28-21K-7HM.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">小米 红米Note4X 全网通版 3GB+16GB 樱花粉 移动联</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥799.00</span>
+											</p>
+										</li>
+										<li>
+											<p class="img">
+												<a href="#"><img src="images/A23-150-27H.jpg" alt="" /></a>
+											</p>
+											<p class="title">
+												<a href="#">TP-LINK 普联 TL-WDR5800 900M 11AC双频无线路由</a>
+											</p>
+											<p class="price">
+												<span class="price-in">￥169.00</span>
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<a class="botslider-l" id="botslider-l"></a>
+							<a class="botslider-r" id="botslider-r"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col230 fr">
+					<div class="col230-top mb10">
+						<ul id="col230-top-ul1" class="clearfix">
+							<li><a href="#"><img src="images/226x241_1.jpg"/></a></li>
+							<li><a href="#"><img src="images/226x241_2.jpg"/></a></li>
+							<li><a href="#"><img src="images/226x241_3.jpg"/></a></li>
+							<li><a href="#"><img src="images/226x241_4.jpg"/></a></li>
+							<li><a href="#"><img src="images/226x241_5.jpg"/></a></li>
+						</ul>
+						<ol class="clearfix" id="col230-top-ol1">
+						</ol>
+					</div>
+					<div class="col230-bot">
+						<a href="#"><img src="images/230x218_2.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<!--热卖区-->
+			<div class="mb20 clearfix ">
+				<div class="hot-sale fl floor floor-orange">
+					<h2>热卖区</h2>
+					<div class="hot-title">
+						<a href="javascript:void(0);" id="hot_sale">换一批</a>
+						<span class="fr">换一批热卖促销商品，不容错过，更多惊喜等你发现</span>
+					</div>
+					<div class="tabc">
+						<div class="tabc-in" id="tabc_in">
+							<div class="tabc-iner">
+								<ul class="adlist clearfix">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A23-150-01N.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/rqbk.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">TP-LINK 普联 TL-SG1024T 24口全千兆以太网交换机 标准机架式 3种功</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥499.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A1R-184-032-02.jpg" alt="" /></a>
+										</p>
+										<p class="title">
+											<a href="#">iPhone8 Plus限量抢购中!输入券码iphone200立减200元!先到先得!</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥6688.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A28-21K-7HM.jpg" alt="" /></a>
+										</p>
+										<p class="title">
+											<a href="#">小米 红米Note4X 全网通版 3GB+16GB 樱花粉 移动联通电信4G手机</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥799.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0X-184-04R.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/zj.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">Apple AirPods 蓝牙无线耳机 MMEF2CH/A</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1188.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+								</ul>
+							</div>
+							<!-- 第二批-->
+							<div class="tabc-iner">
+								<ul class="adlist clearfix">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A23-163-296.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/mxsp.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">下单页面输入WF10部分网络设备立减(满299-10,599-20,999-50,1500-</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1988.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A23-150-01N.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/rqbk.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">TP-LINK 普联 TL-SG1024T 24口全千兆以太网交换机 标准机架式 3种功</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥499.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A28-800-7C4.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/jbj.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">华为 HUAWEI P10 全网通 4GB+128GB 草木绿 移动联通电信4G手机 双</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥3299.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A04-112-66K_02.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/rqbk.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">富士 FUJIFILM X-A10 (XC 16-50II) 微单电套机 银黑 小巧轻便 微距拍摄 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥2799.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+								</ul>
+							</div>
+							<!--第三批-->
+							<div class="tabc-iner">
+								<ul class="adlist clearfix">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A6M-69J-02H (1).jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/rxtj.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">MOPS Avegant 高清VR眼镜一体电玩城和移动私人影院 智能穿戴硬件品</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥3299.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0Y-5LA-08V.jpg" alt="" /></a>
+										</p>
+										<p class="title">
+											<a href="#">T居康/jufit 居康JFF008TM 家用跑步机 免安装迷你折叠静音电动走步跑步功</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1399.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A28-800-747.jpg" alt="" /></a>
+										</p>
+										<p class="title">
+											<a href="#">居康/jufit 居康JFF008TM 家用跑步机 免安装迷你折叠静音电动走步跑步</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥3299.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A28-043-75Q.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/mxsp.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">魅族 PRO6S 玫瑰金 内存4GB+64GB 移动联通电信4G手机 全网通公开版  </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1799.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+								</ul>
+							</div>
+							<!--第四批-->
+							<div class="tabc-iner">
+								<ul class="adlist clearfix">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A28-043-75Q.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/mxsp.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">魅族 PRO6S 玫瑰金 内存4GB+64GB 移动联通电信4G手机 全网通公开版 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1779.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A24-053-3AK-03_02.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/rqbk.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">TOSHIBA 东芝 新黑甲虫系列 2.5寸 2TB USB3.0 移动硬盘 黑色 HDTB32</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥579.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A46-6CJ-2AY.jpg" alt="" /></a>
+											<span class="ad-icon1"><img src="images/zj.png" alt="" /></span>
+										</p>
+										<p class="title">
+											<a href="#">OPPLE 欧普照明 LED创意可充电触控台灯 护眼灯 MT-HY03T-71-百变</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥259.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A45-025-0U0.jpg" alt="" /></a>
+										</p>
+										<p class="title">
+											<a href="#">原装正品!!!适用HP Officejet L7380 L7580 L7590 Pro K5300! </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥87.00</span>
+										</p>
+										<a href="#" class="qg">抢购</a>
+									</li>
+								</ul>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="col230 fr">
+					<div class="news">
+						<dl>
+							<dt>
+								<h5 class="fl">新蛋动态</h5>
+								<a href="#" class="fr" style="margin:0 10px;color:#666;font-family: simsun;">更多>></a>
+							</dt>
+							<dd>
+								<a href="#"style="color:#666;">魅族品牌日  爆款直降！</a>
+								<span class="new-icon"></span>
+							</dd>
+							<dd><a href="#" style="color:#666;">iPhone8现货发售</a></dd>
+						</dl>
+					</div>
+					<div class="slider-top" id="slider_top">
+						<ul>
+							<li><a href="#"><img src="images/230x123-1.jpg"/></a></li>
+							<li><a href="#"><img src="images/230x123.jpg"/></a></li>
+							<li><a href="#"><img src="images/230x123_002.jpg"/></a></li>
+							<li><a href="#"><img src="images/230x123_003.jpg"/></a></li>
+							<li><a href="#"><img src="images/230x123_004.jpg"/></a></li>
+							<li><a href="#"><img src="images/230x123_005.jpg"/></a></li>
+							<li><a href="#"><img src="images/230x123_006.jpg"/></a></li>
+							<li><a href="#"><img src="images/230x123_007.jpg"/></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--好评热品-->
+			<div class="mb20 clearfix">
+				<div class="floor fl floor-orange good-commet">
+					<h2>好评热品</h2>
+					<div class="hot-title">
+						<span class="fr">热门好评商品，不要错过哦</span>
+					</div>
+					<div class="good-commet-list clearfix">
+						<ul class="clearfix" id="commet-list-ul">
+							<li class="commet-list_1" id="commet-list_1">
+								<a href="#"><img src="images/250x185_1.jpg" alt=""></a>
+								<span>43人已评论</span>
+								<div class="li-div1"><span>推荐度98%</span><a href="#">华为 荣耀9 全网通 高配版 6GB+64GB 海鸥...</a></div>
+								<p>喜欢胡歌，喜欢他代言的手机</p>
+								<div class="li-div2">
+									<div>
+										<a href="#"><span>[43]</span></a>
+									</div>
+									<div>杜**9<img src="images/48x48_1.jpg" alt=""></div>
+								</div>
+							</li>
+							<li class="commet-list_2" id="commet-list_2">
+								<a href="#"><img src="images/250x185_2.jpg" alt=""></a>
+								<span>39人已评论</span>
+								<div class="li-div1"><span>推荐度100%</span><a href="#">戴森 Dyson 吸尘器 V6 ANIMAL+ 手持吸尘...</a></div>
+								<p>吸尘器很好。很方便，很高科技</p>
+								<div class="li-div2">
+									<div>
+										<a href="#"><span>[39]</span></a>
+									</div>
+									<div>1**62690701<img src="images/48x48_2.jpg" alt=""></div>
+								</div>
+							</li>
+							<li class="commet-list_3" id="commet-list_3">
+								<a href="#"><img src="images/250x185_3.jpg" alt=""></a>
+								<span>6人已评论</span>
+								<div class="li-div1"><span>推荐度100%</span><a href="#">AKG 爱科技 K3003 参考级入耳式耳机 动圈...</a></div>
+								<p>总体评价: 鼠标一抖,神器到手,一个半月的工资离袋出走
+优点: 经过大小坛子的浸泡,也在上海几个知名的商家蹭听过,对蛋哥出货的品质还是非常信任的,IE8,ESW9都从蛋哥这里弄来的,这次又HOLD不住了,从蛋哥这里入了这只人称神器的玩意,同事都说我疯了=，= 废话少说,谈谈感受.比听过许多动铁，她低频自然润泽，...</p>
+								<div class="li-div2">
+									<div>
+										<a href="#"><span>[6]</span></a>
+									</div>
+									<div>b**ky<img src="images/48x48_1.jpg" alt=""></div>
+								</div>
+							</li>
+							<li class="commet-list_4" id="commet-list_4">
+								<a href="#"><img src="images/250x185_4.jpg" alt=""></a>
+								<span>14人已评论</span>
+								<div class="li-div1"><span>推荐度98%</span><a href="#">Apple MacBook Pro 13.3英寸笔记本 深空...</a></div>
+								<p>电脑性能不错，用着比较舒服，携带还方便，就是有点贵啦，花了两个月的工资，要吃土啦</p>
+								<div class="li-div2">
+									<div>
+										<a href="#"><span>[14]</span></a>
+									</div>
+									<div>h**t 国王祭坛<img src="images/48x48_2.jpg" alt=""></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--section4切换商品-->
+			<div class="clearfix mt5">
+				<div class="fl col960">
+					<div class="tab-in" id="taber">
+						<div class="tab">
+							<a href="#" class="current">你也许感兴趣</a>
+							<a href="#">新品发布</a>
+							<a href="#">发烧好评</a>
+							<a href="#">狠惠配</a>
+						</div>
+						<div class="tab-iner show">
+							<ul class="adlist">
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A36-800-DME.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">HUAWEI 华为 MateBook D 15.6英寸轻薄窄边框笔记本</a></p>
+									<p class="price">
+										<span class="price-in">￥5699.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A28-800-7JT.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">华为 HUAWEI nova 2 Plus 4GB+128GB 流光金 移动联</a></p>
+									<p class="price">
+										<span class="price-in">￥2299.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A10-5LF-6T7.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">SONY 索尼 MDR-1000X Hi-Res无线 降噪 立体声 耳机 </a></p>
+									<p class="price">
+										<span class="price-in">￥2099.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A41-3XW-3CG.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">夏普 SHARP LCD-60SU465A 60英寸 4K高清 智能液晶 </a></p>
+									<p class="price">
+										<span class="price-in">￥4199.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A6D-048-088.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">Microsoft 微软 New Surface Pro 二合一平板电脑 12.3</a> </p>
+									<p class="price">
+										<span class="price-in">￥8999.00</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-iner hide">
+							<ul class="adlist">
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A04-112-66K_02.jpg"/></a>
+										<span class="ad-icon1"><img src="images/xpsf.png"/></span>
+									</p>
+									<p class="title"><a href="#">富士 FUJIFILM X-A10 (XC 16-50II) 微单电套机 银黑 小</a></p>
+									<p class="price">
+										<span class="price-in">￥2799.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A1I-184-02Y.jpg"/></a>
+										<span class="ad-icon1"><img src="images/xpsf.png"/></span>
+									</p>
+									<p class="title"><a href="#">Apple MacBook Air 13.3英寸笔记本电脑 银色(Core i5</a> </p>
+									<p class="price">
+										<span class="price-in">￥6188.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A1O-184-02H.jpg"/></a>
+										<span class="ad-icon1"><img src="images/xpsf.png"/></span>
+									</p>
+									<p class="title"><a href="#">Apple iPad Pro 平板电脑 12.9英寸 64G WLAN版/A10</a></p>
+									<p class="price">
+										<span class="price-in">￥6388.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A6M-1KW-04S.jpg"/></a>
+										<span class="ad-icon1"><img src="images/xpsf.png"/></span>
+									</p>
+									<p class="title"><a href="#">爱侣 女用 振动棒 Climax Elite, ELLE 9x Silicone Vibe,e </a></p>
+									<p class="price">
+										<span class="price-in">￥220.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A6M-69J-02G-06.jpg"/></a>
+										<span class="ad-icon1"><img src="images/rxtj.png"/></span>
+									</p>
+									<p class="title"><a href="#">MOPS 忻风便携空气净化器 智能防雾霾PM2.5口罩 浅蓝 </a> </p>
+									<p class="price">
+										<span class="price-in">￥268.00</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-iner hide">
+							<ul class="adlist">
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A28-800-7J4.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">华为 荣耀9 全网通 高配版 6GB+64GB 海鸥灰 移动联通</a></p>
+									<p class="price">
+										<span class="price-in">￥239.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A6M-69J-02H.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">MOPS Avegant 高清VR眼镜一体电玩城和移动私人影院 </a></p>
+									<p class="price">
+										<span class="price-in">￥3299.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A04-4G0-66V.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">Canon 佳能 EOS M6 18-150 微型可换镜数码相机 银色</a></p>
+									<p class="price">
+										<span class="price-in">￥5890.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A51-088-1HY.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">美的 Midea 移动空调一体机冷暖大1.5p 冷暖 厨房空调K </a></p>
+									<p class="price">
+										<span class="price-in">￥2499.00</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-iner hide">
+							<ul class="adlist">
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A41-5PQ-36Y.jpg"/></a>
+										<span class="ad-icon1"><img src="images/qwdj.png"/></span>
+									</p>
+									<p class="title"><a href="#">TOSHIBA 东芝 55U6600C 55英寸 3840x2160 4K高清</a></p>
+									<p class="price">
+										<span class="price-in">￥3399.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A6D-048-074.jpg"/></a>
+										<span class="ad-icon1"><img src="images/mxsp.png"/></span>
+									</p>
+									<p class="title"><a href="#">微软(Microsoft)Surface Pro 4 二合一平板电脑 Intel Cor</a></p>
+									<p class="price">
+										<span class="price-in">￥5999.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A04-038-637.jpg"/></a>
+										<span class="ad-icon1"><img src="images/mxsp.png"/></span>
+									</p>
+									<p class="title"><a href="#">Canon 佳能 EOS 80D 单反相机 含 EF-S 18-200mm  </a></p>
+									<p class="price">
+										<span class="price-in">￥8499.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A28-800-747.jpg"/></a>
+										<span class="ad-icon1"><img src="images/smw.png"/></span>
+									</p>
+									<p class="title"><a href="#">华为 Mate 9 MHA-AL00 摩卡金 内存4GB+64GB 移动 </a></p>
+									<p class="price">
+										<span class="price-in">￥2999.00</span>
+									</p>
+								</li>
+								<li>
+									<p class="img">
+										<a href="#"><img src="images/A04-4G0-66S.jpg"/></a>
+									</p>
+									<p class="title"><a href="#">Canon 佳能 EOS M6 15-45 微型可换镜数码相机 黑色</a> </p>
+									<p class="price">
+										<span class="price-in">￥3899.00</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="fr col240">
+					<ul id="col240-top-ul2" class="clearfix">
+						<li><a href="#"><img src="images/238x268_1.jpg"/></a></li>
+						<li><a href="#"><img src="images/238x268_2.jpg"/></a></li>
+						<li><a href="#"><img src="images/238x268_3.jpg"/></a></li>
+						<li><a href="#"><img src="images/238x268_4.jpg"/></a></li>
+					</ul>
+					<ol class="clearfix" id="col240-top-ol2">
+					</ol>
+				</div>
+			</div>
+			<!--section5一大块-->
+			 <div class="mt20 mb20 clearfix">
+			 	<div class="col960 fl">
+			 		<!--海淘推荐-->
+			 		<div class="floor mb20">
+			 			<h2>海淘推荐</h2>
+						<div class="ad clearfix">
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/S6C-257-1QT.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/xlqg.png" alt=""></span>
+								</p>
+								<p class="title">
+									<img src="images/overseashopping12.png" alt="" class="mr5">
+									<a href="#" style="color:#666;"> Klipsch杰士 XR8i 通话式耳机 苹果版</a>
+								</p>
+								<p class="price">
+									<del>￥2079.00</del>
+									<span class="price-in">$1079.00</span>
+								</p>
+							</div>
+							<div class="ad_slider fl">
+								<ul id="ad_slider-ul1">
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+								</ul>
+								<ol class="clearfix" id="ad_slider-ol1">
+
+								</ol>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/S6C-4PU-1PH.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<img src="images/overseashopping12.png" alt="" class="mr5">
+									<a href="#" style="color:#666;">  Monster 魔声耳机 Ncredible NTune On-Ear Headphone M</a>
+								</p>
+								<p class="price">
+									<del>￥899.00</del>
+									<span class="price-in">￥209.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/S6U-4KV-63Z.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<img src="images/overseashopping12.png" alt="" class="mr5">
+									<a href="#" style="color:#666;">  Corsair海盗船 SABRE RGB 光学游戏鼠标</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥4099.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/S9G-2QG-00A_01.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<img src="images/overseashopping12.png" alt="" class="mr5">
+									<a href="#" style="color:#666;"> 意大利直邮 Michael Kors MK短款十字纹钱包 黑色</a>
+								</p>
+								<p class="price">
+									<del>￥698.00</del>
+									<span class="price-in">￥419.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/S6C-4PU-1PH.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<img src="images/overseashopping12.png" alt="" class="mr5">
+									<a href="#" style="color:#666;"> 飞利浦上代旗舰,*高性价比HIFI耳机,烧友必备</a>
+								</p>
+								<p class="price">
+									<del>￥599.00</del>
+									<span class="price-in">￥369.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/S6C-033-1P6.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<img src="images/overseashopping12.png" alt="" class="mr5">
+									<a href="#" style="color:#666;">  Philips 飞利浦M2L/27 Fidelio Headphones with Lightning </a>
+								</p>
+								<p class="price">
+									<del>￥1349.00</del>
+									<span class="price-in">￥599.00</span>
+								</p>
+							</div>
+						</div>
+						<div class="brand">
+							<ul>
+								<li>
+									<a href="#"><img src="images/asus.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/fanxin-2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/feilipu.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo22.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/panasonic.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo3.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+			 		</div>
+			 		<!--手机摄影-->
+			 		<div class="floor floor-orange mb20">
+			 			<h2>手机 • 摄影</h2>
+						<div class="ad clearfix">
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A04-026-5UV.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rqfq.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;">SONY 索尼 DSC-RX100 M3 数码相机 黑色 F1.8-2.8大光圈/2010万像素/1英寸Exmor R CMOS</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥3999.00</span>
+								</p>
+							</div>
+							<div class="ad_slider fl">
+								<ul id="ad_slider-ul2">
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+								</ul>
+								<ol class="clearfix" id="ad_slider-ol2">
+
+								</ol>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A28-800-7J2.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/xpth.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 华为 荣耀9 全网通 高配版 6GB+64GB 魅海蓝 移动联通电信4G手机 双卡双待</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥2409.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A04-026-5QR-03.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 【a5000】2010万有效像素+180°可翻折Xtra Fine液晶屏+一触TM功能和WIFI功能</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥2000.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A1R-184-032-02.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/mxsp.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> iPhone8 Plus限量抢购中!输入券码iphone200立减200元!先到先得!</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥6688.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A1I-184-02H.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/jbj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> iPhone8 Plus限量抢购中!输入券码iphone200立减200元!先到先得!</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥12828.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A28-800-74A.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rqbk.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 华为 Mate 9 MHA-AL00 摩卡金 内存6GB+128GB 移动联通电信4G手</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥3429.00</span>
+								</p>
+							</div>
+						</div>
+						<div class="brand">
+							<ul>
+								<li>
+									<a href="#"><img src="images/apple.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/huaweibannera.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/xiaomibannera.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/meizubannera.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/jianengbannerd.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/sonybannera.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/fushibannera.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/songxiabannera.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--电脑平板-->
+					<div class="floor mb20">
+						<h2>电脑 • 平板</h2>
+						<div class="ad clearfix">
+							<div class="adlist fl computer">
+								<p class="img">
+									<a href="#"><img src="images/A36-125-DHA.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rqbk.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;">ThinkPad 15.6英寸笔记本电脑 S5 20G4A00NCD (i7-6700HQ 4G 1TB G</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥6899.00</span>
+								</p>
+							</div>
+							<div class="ad_slider fl">
+								<ul id="ad_slider-ul3">
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+								</ul>
+								<ol class="clearfix" id="ad_slider-ol3">
+
+								</ol>
+							</div>
+							<div class="adlist fl computer">
+								<p class="img">
+									<a href="#"><img src="images/A22-69G-5RE.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rqfq.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> Logitech 罗技 Pro机械 游戏 键盘 RGB 机械键盘 紧凑式 机械键盘 电竞</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥669.00</span>
+								</p>
+							</div>
+							<div class="adlist fl computer">
+								<p class="img">
+									<a href="#"><img src="images/A6D-048-087.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/xsqg.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> Microsoft 微软 New Surface Pro 二合一平板电脑 12.3英寸(Intel Core i</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥6888.00</span>
+								</p>
+							</div>
+							<div class="adlist fl computer">
+								<p class="img">
+									<a href="#"><img src="images/A6M-5LF-03U.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/mxsp.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> SONY 索尼 MDR-1000X Hi-Res无线 降噪 立体声 耳机 黑色</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥2099.00</span>
+								</p>
+							</div>
+							<div class="adlist fl computer">
+								<p class="img">
+									<a href="#"><img src="images/A24-108-3CT.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/xsqg.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 买硬盘送硬盘包,数量有限,先到先得</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥579.00</span>
+								</p>
+							</div>
+							<div class="adlist fl computer">
+								<p class="img">
+									<a href="#"><img src="images/A23-163-27Q.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/xsqg.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;">下单页面输入WF10部分网络设备立减(满299-10,599-20,999-50,1500-1</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥1199.00</span>
+								</p>
+							</div>
+						</div>
+						<div class="brand">
+							<ul>
+								<li>
+									<a href="#"><img src="images/f.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/t.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/R.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/D.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/G.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/dell.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/tp.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/cm.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+			 		</div>
+					<!-- 家用生活电器-->
+					<div class="floor floor-orange mb20">
+						<h2>家用 • 生活电器</h2>
+						<div class="ad clearfix">
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A09-3VQ-5PP.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;">Dyson 戴森 HP03 空气净化风扇 净化 PM0.1甲醛 气流循环 凉风 制暖 </a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥5690.00</span>
+								</p>
+							</div>
+							<div class="ad_slider fl">
+								<ul id="ad_slider-ul4">
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+								</ul>
+								<ol class="clearfix" id="ad_slider-ol4">
+
+								</ol>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A31-6G6-6FY.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rqbk.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 整机质保一年 下单时请备注A\B\C尺寸</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥798.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A31-6GC-6DY.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rqbk.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 600ML双果汁杯 下单送原装日式饭盒+便携式购物袋+食谱</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥298.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A52-4FS-0UV.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/hprc.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;">Midea 美的 冰箱 206升三门三温 静音省电 BCD-206TM(E)悦动白</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥1279.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A09-6ES-5M4.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rqfq.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 限时赠送诱蚊剂 数量有限 先到先得</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥68.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A09-3VQ-5P0.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/mxsp.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 戴森 Dyson 吸尘器 V6 ANIMAL+ 手持吸尘器 家用除螨 无线</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥26499.00</span>
+								</p>
+							</div>
+						</div>
+						<div class="brand">
+							<ul>
+								<li>
+									<a href="#"><img src="images/suporlogo1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/midea.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/floor2_sharp.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/panasonic.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/oumulong.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/feilipu.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/taichang.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/deguobolang.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--生活百货-->
+					<div class="floor mb20">
+						<h2>生活 • 百货</h2>
+						<div class="ad clearfix">
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A6J-6L0-3HV.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> XD Design 蒙马特防盗背包 商务双肩背包 15寸电脑包 灰色</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥365.00</span>
+								</p>
+							</div>
+							<div class="ad_slider fl">
+								<ul id="ad_slider-ul5">
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205 (1).jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/480x205.jpg"/></a></li>
+									<li><a href="#"><img src="images/485x205.jpg"/></a></li>
+								</ul>
+								<ol class="clearfix" id="ad_slider-ol5">
+
+								</ol>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/S2C-22J-30J.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> 威古氏偏光太阳镜男士商务炫彩驾驶镜墨镜枪框灰片3097</a>
+								</p>
+								<p class="price">
+									<del>￥599.00</del>
+									<span class="price-in">￥199.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A1A-382-0PT.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;">  Garmin 佳明 fenix5S 中文蓝宝石黑色飞耐时5S心率监测GPS登山游泳户</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥5180.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A29-28R-2FWN01.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> THERMOS 膳魔师 真空不锈钢保温杯 焖烧杯 食物罐 SK-3020 CBW 咖</a>
+								</p>
+								<p class="price">
+									<span class="price-in">￥269.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A46-6CJ-2AV.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;">OPPLE 欧普照明 LED七彩氛围触控台灯 蘑菇拍拍灯 床头创意灯 MZT-HY03T-88-悦灵</a>
+								</p>
+								<p class="price">
+									<del>￥599.00</del>
+									<span class="price-in">￥199.00</span>
+								</p>
+							</div>
+							<div class="adlist fl">
+								<p class="img">
+									<a href="#"><img src="images/A0G-1CC-179.jpg" alt=""></a>
+									<span class="ad-icon1"><img src="images/rxtj.png" alt=""></span>
+								</p>
+								<p class="title">
+									<a href="#" style="color:#666;"> shell 壳牌 *凡喜力全合成机油 中*限量版 Helix Ultra 灰喜力 5W-40 S </a>
+								</p>
+								<p class="price">
+									<del>￥1349.00</del>
+									<span class="price-in">￥338.00</span>
+								</p>
+							</div>
+						</div>
+						<div class="brand">
+							<ul>
+								<li>
+									<a href="#"><img src="images/asus.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/fanxin-2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/feilipu.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo22.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/panasonic.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/logo3.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+			 	</div>
+			 	<div class="col230 fr">
+			 		<!--手表奶粉-->
+			 		<div class="hot-rank mb20">
+			 			<h3>热销榜</h3>
+			 			<div class="hot-rank-in mb10" id="tab_out1">
+			 				<div class="tab-out">
+			 					<a href="#" class="current">手表</a>
+			 					<a href="#">奶粉</a>
+			 				</div>
+			 				<div class="tab-iner show">
+			 					<ul class="adlist">
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/S5M-5CX-3SD_02.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> Timex 天美时 T2P142 腕表 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥229.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/S5M-5CN-3SK.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> Swiss Precimax SP12171 男款计时表 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1119.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/S5M-54P-3UM.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> Invicta因维克塔 男士Pro Diver系列自动机 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥429.00</span>
+										</p>
+			 						</li>
+			 						<li style="border-bottom:none;">
+			 							<p class="img">
+											<a href="#"><img src="images/S5M-2QW-3XN.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Fossil 女式手表Jacqueline系列ES3487复古 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥479.00</span>
+										</p>
+			 						</li>
+			 					</ul>
+			 				</div>
+			 				<div class="tab-iner hide">
+			 					<ul class="adlist">
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/S7D-4Y0-05Y.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">英国直邮英国原装爱他美 4段 2岁+ 奶粉8 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥539.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/S7D-4Y6-066.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">英国直邮英国原装牛栏 2段 6-12个月 奶粉</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥519.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/S7D-4Y6-06F.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> 英国直邮英国原装牛栏 4段 2-3岁 奶粉80</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥499.00</span>
+										</p>
+			 						</li>
+			 						<li style="border-bottom:none;">
+			 							<p class="img">
+											<a href="#"><img src="images/S7D-4Y6-06G.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">英国直邮英国原装牛栏 4段 2-3岁 奶粉800G 6罐装 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥759.00</span>
+										</p>
+			 						</li>
+			 					</ul>
+			 				</div>
+			 			</div>
+			 			<a href="#" style="width:230px;height:90px;display:inline-block;"><img src="images/230X90.jpg" alt="" /></a>
+			 		</div>
+			 		<!--手机摄影-->
+			 		<div class="hot-rank mb20">
+			 			<h3>热销榜</h3>
+			 			<div class="hot-rank-in mb10" id="tab_out2">
+			 				<div class="tab-out">
+			 					<a href="#" class="current">智能手机</a>
+			 					<a href="#">微单</a>
+			 					<a href="#">单反相机</a>
+			 				</div>
+			 				<div class="tab-iner show">
+			 					<ul class="adlist">
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A28-21K-7HL.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> 小米 红米Note4X 全网通版 3GB+16GB 磨砂黑 移动联通电信4G手机 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥799.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A28-21K-7HJ.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">小米 红米Note4X 全网通版 3GB+16GB  香槟金  移动联通电信4G手机</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥799.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A28-21K-7HM.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> 小米 红米Note4X 全网通版 3GB+16GB 樱花粉  移动联通电信4G手机</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥799.00</span>
+										</p>
+			 						</li>
+			 						<li style="border-bottom:none;">
+			 							<p class="img">
+											<a href="#"><img src="images/A28-21K-77U.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">小米 红米Note4X 铂银灰 内存3GB+32GB 移动联通电信4G手机 全球通</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥929.00</span>
+										</p>
+			 						</li>
+			 					</ul>
+			 				</div>
+			 				<div class="tab-iner hide">
+			 					<ul class="adlist">
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A04-026-5QR-03.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SONY 索尼 ILCE-5000L 微单相机 A5000 -  </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥2000.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A04-026-5UV.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SONY 索尼 ILCE-5000L 微单相机 A5000 - </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1898.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A04-026-5QV-02.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SONY 索尼 ILCE-6000L 微单相机 黑色 24</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥3799.00</span>
+										</p>
+			 						</li>
+			 						<li style="border-bottom:none;">
+			 							<p class="img">
+											<a href="#"><img src="images/A04-120-64E-02.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Panasonic 松下 Lumix DMC-GF8 微型单电单 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥2699.00</span>
+										</p>
+			 						</li>
+			 					</ul>
+			 				</div>
+			 				<div class="tab-iner hide">
+			 					<ul class="adlist">
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A4Z-038-004.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Canon 佳能 EOS 100D 单反相机 机身 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥2259.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A04-038-63X.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Canon 佳能 EOS 1300D 单反相机 单镜套</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥2469.00</span>
+										</p>
+			 						</li>
+			 						<li>
+			 							<p class="img">
+											<a href="#"><img src="images/A04-038-635.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Canon 佳能 EOS 80D 单反相机 机身</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥5899.00</span>
+										</p>
+			 						</li>
+			 						<li style="border-bottom:none;">
+			 							<p class="img">
+											<a href="#"><img src="images/A04-038-636.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Canon 佳能 EOS 80D 单反相机 含 EF-S 18- </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥8150.00</span>
+										</p>
+			 						</li>
+			 					</ul>
+			 				</div>
+			 			</div>
+			 			<a href="#" style="width:230px;height:90px;display:inline-block;"><img src="images/230x90 (1).jpg" alt="" /></a>
+			 		</div>
+			 		<!--电脑平板-->
+					<div class="hot-rank mb20">
+						<h3>热销榜</h3>
+						<div class="hot-rank-in mb10" id="tab_out3">
+							<div class="tab-out">
+								<a href="#" class="current"> 路由器</a>
+								<a href="#">固态硬盘</a>
+								<a href="#">笔记本</a>
+							</div>
+							<div class="tab-iner show">
+								<ul class="adlist" id="adlistshow">
+									<!--<li>
+										<p class="img">
+											<a href="#"><img src="images/A23-01D-27R.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> PHICOMM 斐讯 K2 1200M WIFI穿墙 智能双</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥399.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A23-6K2-2KY.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">斐讯 K2P AC1200 智能双频全千兆无线路</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥799.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A23-6K2-2L0.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> 斐讯 K3 AC3150 双核双频全千兆高端无线路由器 智慧家庭路由</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥1998.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A23-4PD-2J6.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">TP-LINK 普联 R479GP-AC 8口全千兆VPN</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥499.00</span>
+										</p>
+									</li>-->
+								</ul>
+							</div>
+							<div class="tab-iner hide">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A26-034-224.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">TOSHIBA 东芝 Q200系列 240G SSD固态</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥629.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A26-034-1W4-03.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Kingston 金士顿 V300系列 240GB 固态硬 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥589.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A26-032-1ZL.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SAMSUNG 三星 850 EVO系列 120G SSD 固</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥469.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A26-223-21W.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">PLEXTOR 浦科特 M7VC系列 128G SSD固态 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥479.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-iner hide">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A36-048-DMV.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Microsoft 微软 Surface Laptop 轻薄触控笔 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥9299.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A36-125-DGW.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">ThinkPad 14英寸笔记本电脑 T470P 20J6A0</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥8799.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A36-125-DJ1.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Thinkpad 14英寸笔记本电脑 X1 CARBON 2</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥9999.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A36-125-DFD.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Thinkpad 14英寸笔记本电脑 X1 CARBON 2</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥8499.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" style="width:230px;height:90px;display:inline-block;"><img src="images/bkej.jpg" alt="" /></a>
+					</div>
+					<!-- 家用生活电器-->
+					<div class="hot-rank mb20">
+						<h3>热销榜</h3>
+						<div class="hot-rank-in mb10" id="tab_out4">
+							<div class="tab-out">
+								<a href="#" class="current">平板电视</a>
+								<a href="#">剃须刀</a>
+								<a href="#">电烤箱</a>
+							</div>
+							<div class="tab-iner show">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A41-133-3G9.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">夏普 SHARP LCD-50SU460A 50英寸 4K高 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥2799.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A41-5PQ-36Y.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">TOSHIBA 东芝 55U6600C 55英寸 3840x2160 4K高清安卓智能W</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥3399.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A41-026-3GC.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> 索尼 SONY KD-49X9000E 49英寸 4K高清智</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥6599.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A41-290-3F1.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">TCL 49A660U 49英寸4K电视纤薄64位30核</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥2699.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-iner hide">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0O-009-1V3.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">博朗 Braun 5系5090CC 电动剃须刀 充电刮 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥999.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0O-033-1PY.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Philips 飞利浦 剃须刀电动三刀头剃须刮胡 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥699.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0O-009-1R2.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">BRAUN 博朗电动剃须刀1系140s-1全身水洗</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥219.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A0O-446-1DQ.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">飞科剃须刀FS361 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥119.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-iner hide">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A31-157-659.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Bear 小熊 DKX-B30N1 粉色电烤箱家用30L </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥239.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A31-117-69S.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">东菱 Donlim DL-K12 电烤箱 家用 烘焙 12</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥119.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A31-117-69V.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">东菱 Donlim DL-K33D 电烤箱家用烘焙烤箱3</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥219.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A31-117-69W.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">东菱 Donlim DL-K33D 电烤箱 家用多功能烤 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥219.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" style="width:230px;height:90px;display:inline-block;"><img src="images/230x90 (2).jpg" alt="" /></a>
+					</div>
+					<!--生活百货-->
+					<div class="hot-rank mb20">
+						<h3>热销榜</h3>
+						<div class="hot-rank-in mb10" id="tab_out5">
+							<div class="tab-out">
+								<a href="#" class="current">机油</a>
+								<a href="#">箱包</a>
+								<a href="#">锅具</a>
+							</div>
+							<div class="tab-iner show">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0G-14W-11C.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">TOTAL 道达尔 Quartz 快驰5000 润滑油 SN </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥158.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0G-14X-0DQ-02.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">Castrol 嘉实多 极护全合成机油 钛流体技术 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥299.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A0G-14X-0DQ-02.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;"> Castrol 嘉实多 极护全合成机油 钛流体技术 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥338.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A0G-1CC-0Z7.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">shell 壳牌 轿车发动机油 Helix HX7 (蓝喜力) </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥228.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-iner hide">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A6J-0DC-29QN01.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SWISSWIN 瑞士军刀 男士单肩包手提休闲 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥99.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A6J-0DC-274N01.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SWISSWIN瑞士军刀电脑包商务休闲双肩 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥98.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A40-0DC-2RS_11.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SWISSWIN 瑞士十字 多功能双肩电脑包 黑</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥158.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A0C-0DC-0AF.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">SWISSWIN 瑞士十字 A4商务单肩包男士斜挎包 英伦包包单肩男 </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥99.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-iner hide">
+								<ul class="adlist">
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A29-5DE-2D4.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">炊大皇 美式汤锅20cm </a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥59.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A29-5DE-2D1.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">炊大皇 压花煎盘26cm简装红 WG15921</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥59.00</span>
+										</p>
+									</li>
+									<li>
+										<p class="img">
+											<a href="#"><img src="images/A29-5DE-2CW.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">炊大皇 精钢炒锅32CM</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥399.00</span>
+										</p>
+									</li>
+									<li style="border-bottom:none;">
+										<p class="img">
+											<a href="#"><img src="images/A29-5DE-2CV-02.jpg" alt=""></a>
+										</p>
+										<p class="title">
+											<a href="#" style="color:#666;">炊大皇 健康无油烟炒锅34CM</a>
+										</p>
+										<p class="price">
+											<span class="price-in">￥119.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" style="width:230px;height:91px;display:inline-block;"><img src="images/230x91.jpg" alt="" /></a>
+					</div>
+
+
+			 	</div>
+			 </div>
+			 <div class="card clearfix">
+			 	<ul class="fl">
+			 		<li class="c-g">
+			 			<a href="#"><img src="images/b3_v3.jpg"></a>
+			 		</li>
+			 		<li class="c-g">
+			 			<a href="#"><img src="images/b4_v2.jpg"></a>
+			 		</li>
+			 		<li class="c-b">
+			 			<a href="#"><img src="images/b5_v2.jpg"></a>
+			 		</li>
+			 	</ul>
+			 </div>
+		</div>
+		<!-- 主要内容部分结束 -->
+		<!--二维码开始-->
+		<div class="wrap ma">
+			<div class="ma1">
+				<span class="handegg app"></span>
+				<div class="ma-app">
+					<ul>
+						<li class="ma-app-title">掌上新蛋</li>
+						<li class="ma-app-bottom">
+							<p>手机扫描二维码</p>
+							<p>免费下载新蛋商城</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ma1">
+				<span class="wx app"></span>
+				<div class="ma-app">
+					<ul>
+						<li class="ma-app-title">新蛋微信公众号</li>
+						<li class="ma-app-bottom">
+							<p>使用微信扫描一下</p>
+							<p>或找微信号： Newegg_China</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ma1">
+				<span class="youhui app-em"></span>
+				<div class="ma-app-em">
+					<ul>
+						<li class="ma-app-title em">订阅新蛋优惠信息</li>
+						<li class="ma-app-bottom-em em">
+							<a href="#">分类订阅</a>
+							<span style="padding-left:8px;">>></span>
+							<a href="#"  style="margin-left:18px;">咨询导购</a>
+							<span style="padding-left:8px;">>></span>
+						</li>
+						<li class="em2">
+							<input type="email" placeholder="输入Email地址" />
+							<a href="#" class="read">订阅</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ma2">
+				<div class="observe">
+					<ul>
+						<li class="observe-us">关注我们</li>
+						<li class="weibo">
+							<span class="icon sina"></span>
+							<a  class="btn" href="#">加关注</a>
+						</li>
+						<li class="weibo">
+							<span class="icon tecent"></span>
+							<a  class="btn" href="#">加关注</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--二维码结束-->
+		<!--footer开始-->
+		 <div class="footer">
+		 	<div class="wrap footer-in">
+		 		<div class="message clearfix">
+		 			<dl class="helpcenter">
+			 			<dt>新手上路</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">怎样购物</a></li>
+			 			 		<li><a href="#">支付常见问题</a></li>
+			 			 		<li><a href="#">免运费政策</a></li>
+			 			 		<li><a href="#">发票须知</a></li>
+			 			 		<li><a href="#">签收验货流程</a></li>
+			 			 		<li><a href="#">用户评论/咨询</a></li>
+			 			 		<li><a href="#">大件商品订购流程</a></li>
+
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="service">
+			 			<dt>售后服务</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">退换货政策</a></li>
+			 			 		<li><a href="#">订单查询</a></li>
+			 			 		<li><a href="#">售后申请</a></li>
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="special-service">
+			 			<dt>特色服务</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">关于会员制</a></li>
+			 			 		<li><a href="#">价格保护</a></li>
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="cooperate">
+			 			<dt>申请合作</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">申请成为供应商</a></li>
+			 			 		<li><a href="#">申请入驻开放平台</a></li>
+			 			 		<li><a href="#">友情合作</a></li>
+			 			 		<li><a href="#">网站联盟</a></li>
+			 			 		<li><a href="#">企业客户</a></li>
+
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="about-us">
+			 			<dt>关于我们</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">新蛋集团</a></li>
+			 			 		<li><a href="#">联系我们</a></li>
+			 			 		<li><a href="#">诚聘英才</a></li>
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+		 		</div>
+		 		<div class="in-footer">
+		 			<a href="#" class="item1"></a>
+		 			<a href="#" class="item2"></a>
+		 			<a href="#" class="item3" style="position: relative;">
+		 				<span style="position: absolute;font-size:12px;bottom: 4px;left: 41px;color: #001b75;">3103108092</span>
+		 			</a>
+		 			<a href="#" class="item4"></a>
+		 			<a href="#" class="item5"></a>
+		 			<p>
+		 				新蛋集团网站：
+		 				<a href="#" class="ml5" style="color:#484848;">美国新蛋</a>
+		 				<a href="#" class="ml10" style="color:#484848;">中国新蛋</a>
+		 				 <a href="#" class="ml10" style="color:#484848;">加拿大新蛋</a>
+		 				 <a href="#" class="ml10" style="color:#484848;">新蛋软件</a>
+		 			</p>
+		 			<p>&copy;&nbsp;2001-2017 新蛋商贸（上海）有限公司 &nbsp;版权所有&nbsp; <a href="#">沪ICP备:16033615</a></p>
+		 		</div>
+		 	</div>
+		 </div>
+
+		<!--footer结束-->
+		<!-- 固定栏 -->
+		<div>
+		 	<a href="javascsript:void(0);"  class="to-top" id="to_top"></a>
+		 </div>
+		<script>
+
+		  // 海淘推荐小轮播图
+
+
+		  function $id(id){return document.getElementById(id)};
+		  function muchlunbo(pics,small,bg,sm) {
+		  	clearInterval(timer2);
+		  	var ol = $id(small);
+		  	var imgs = $id(pics);//alert(imgs.length);
+		  	var imgWidth = imgs.children[0].offsetWidth;
+
+		  	var timer = null;
+		  	var timer1 = null;
+		    var Left = 0;
+		    var num = 0;
+		  	//console.log(imgWidth);  // 480
+		  	//console.log(ollis.length); // 3
+		  	for(var i = 0; i < imgs.children.length; i++) {
+		  		imgs.children[i].onmouseover = function(){
+		  			clearInterval(timer);
+		  		}
+		  		imgs.children[i].onmouseout = function(){
+					timer = setInterval(time,bg);
+		  		}
+		  	}
+			timer = setInterval(time,bg);
+		  	for(var i = 0,len = imgs.children.length; i < len; i++) {
+		  	  var li = document.createElement("li");
+			  //small == "ad_slider-ol1" ? li.innerHTML = i+1 : (small == "ad_slider-ol2" ? li.innerHTML = i+1 : (small == "ad_slider-ol3" ? li.innerHTML = i+1 : (small == "ad_slider-ol4" ? li.innerHTML = i+1 : (small == "ad_slider-ol5" ? li.innerHTML = i+1 : li.innerHTML = ""))));
+			  switch(small) {
+			  	  case "ad_slider-ol1":
+			  	  	  li.innerHTML = i+1;
+			  	  break;
+			  	  case "ad_slider-ol2":
+			  	  	  li.innerHTML = i+1;
+			  	  break;
+			  	  case "ad_slider-ol3":
+			  	  	  li.innerHTML = i+1;
+			  	  break;
+			  	  case "ad_slider-ol4":
+			  	  	  li.innerHTML = i+1;
+			  	  break;
+			  	  case "ad_slider-ol5":
+			  	  	  li.innerHTML = i+1;
+			  	  break;
+			  }
+		  	  ol.appendChild(li);
+		  	}
+		  	var ollis = ol.children;
+		  	ollis[0].className = "olcol";
+		  	var timer2 = null;
+		  	var str =0,get = 0,spd = 0;
+		  	for(var j = 0; j < ollis.length; j++) {
+		  	  	ollis[j].index = j;
+			  	ollis[j].onmouseover = function(){
+			  	  var that = this;
+			  	  clearInterval(timer);
+			  	  clearInterval(timer1);
+			  	  clearInterval(timer2);
+			  	  // imgs.style.left = this.index*-imgWidth+"px";
+			  	  for(var k = 0; k < ollis.length; k++) {
+			  	    ollis[k].className = "";
+			  	  }
+			  	  if(imgs.offsetLeft >=0) {
+				    ollis[num].className = "olcol";
+			  	  }else{
+			  	    ollis[this.index].className = "olcol";
+			  	  }
+			  	  get = that.index*-imgWidth
+			  	  timer2 = setInterval(function(){
+			  	  	//console.log(that.index*-imgWidth);
+			  	  	//console.log(imgs.offsetLeft);
+			  	  	str = imgs.offsetLeft;
+			  	  	if(get>=str) {
+			  	  		spd = Math.ceil( (get - str) / 10 );
+			  	  		imgs.style.left = str+spd+"px";
+				  	  	if(parseInt(imgs.offsetLeft) == that.index*-imgWidth) {
+				  	  		clearInterval(timer1);
+				  	  		clearInterval(timer2);
+				  	  	}
+			  	  	}else if(get <= str) {
+			  	  		spd = Math.floor( (get - str) / 10 );
+			  	  		imgs.style.left = str+spd+"px";
+				  	  	if(parseInt(imgs.offsetLeft) == that.index*-imgWidth) {
+				  	  		clearInterval(timer1);
+				  	  		clearInterval(timer2);
+				  	  	}
+			  	  	}
+			  	  },20);
+			  	}
+			  	ollis[j].onmouseout = function(){
+			  	  clearInterval(timer);
+			  	  clearInterval(timer1);
+			  	  // clearInterval(timer2);
+			  	  timer = setInterval(time,bg);
+			  	  for(var i = 0; i < ollis.length; i++) {
+			  	  	ollis[i].index = i;
+			  	  	for(var j = 0; j < ollis.length; j++) {
+			  	  		ollis[j].className = "";
+			  	  	}
+			  	  	ollis[this.index].className = "olcol";
+			  	  }
+			  	}
+		  	}
+			var timer1 = null;
+		  	var count = 0;
+		  	var start1, speed1, target1=0;
+		  	function time(){
+		  		clearInterval(timer1);
+		  		var imgLeft = imgs.offsetLeft;
+		  		count = Math.floor(Math.abs(imgLeft / imgWidth));
+		  		count++;
+		  		//console.log(imgs.children.length);
+		  		if(count> imgs.children.length-1) {
+		  			count = 0;
+		  			imgs.style.left = 0;
+		  		}
+		  		//console.log(count)
+		  		timer1 = setInterval(function(){
+		  			target1 = -count*imgWidth;
+		  			start1 = imgs.offsetLeft;
+		  			speed1 = Math.floor((target1 - start1) / 10);
+				    imgs.style.left = start1+speed1+"px";
+				    for(var i = 0; i < imgs.children.length; i++) {
+						for(var j = 0; j < imgs.children.length; j++) {
+							ollis[j].className = "";
+						}
+						if(imgs.offsetLeft >= 0) {
+							ollis[0].className = "olcol";
+						}else{
+							ollis[count].className = "olcol";
+						}
+					}
+		  		},30);	
+		  		for(var i = 0; i < imgs.children.length; i++) {
+						for(var j = 0; j < imgs.children.length; j++) {
+							ollis[j].className = "";
+						}
+						if(imgs.offsetLeft >= 0) {
+							ollis[0].className = "olcol";
+						}else{
+							ollis[count].className = "olcol";
+						}
+					}
+			}
+		  }
+		   muchlunbo("ad_slider-ul1","ad_slider-ol1",3500,20);
+		   muchlunbo("ad_slider-ul2","ad_slider-ol2",4000,25);
+		   muchlunbo("ad_slider-ul3","ad_slider-ol3",4500,30);
+		   muchlunbo("ad_slider-ul4","ad_slider-ol4",3600,33);
+		   muchlunbo("ad_slider-ul5","ad_slider-ol5",3300,36);
+
+
+		   muchlunbo("col230-top-ul1","col230-top-ol1",2300,25);
+		   muchlunbo("col240-top-ul2","col240-top-ol2",2500,20);
+
+
+
+		// 手风琴
+
+	  	$id("commet-list_1").onmouseover = function(){
+	  		 $id("commet-list_1").style.transition = ".3s";
+	  		 $id("commet-list_1").style.webkitTransition = ".3s";
+
+	  		 $id("commet-list_1").style.left = "0px";
+	  		 $id("commet-list_2").style.left = "676px";
+	  		 $id("commet-list_3").style.left = "851px";
+	  		 $id("commet-list_4").style.left = "1026px";
+	  	}
+	  	$id("commet-list_2").onmouseover = function(){
+	  		 $id("commet-list_2").style.transition = ".3s";
+	  		 $id("commet-list_2").style.webkitTransition = ".3s";
+
+	  		 $id("commet-list_1").style.left = "0";
+	  		 $id("commet-list_2").style.left = "175px";
+	  		 $id("commet-list_3").style.left = "851px";
+	  		 $id("commet-list_4").style.left = "1026px";
+	  	}
+	  	$id("commet-list_3").onmouseover = function(){
+	  		 $id("commet-list_3").style.transition = ".3s";
+	  		 $id("commet-list_3").style.webkitTransition = ".3s";
+
+	  		$id("commet-list_1").style.left = "0";
+	  		 $id("commet-list_2").style.left = "175px";
+	  		 $id("commet-list_3").style.left = "350px";
+	  		 $id("commet-list_4").style.left = "1026px";
+	  	}
+	  	$id("commet-list_4").onmouseover = function(){
+	  		 $id("commet-list_4").style.transition = ".3s";
+	  		 $id("commet-list_4").style.webkitTransition = ".3s";
+
+	  		 $id("commet-list_1").style.left = "0";
+	  		 $id("commet-list_2").style.left = "175px";
+	  		 $id("commet-list_3").style.left = "350px";
+	  		 $id("commet-list_4").style.left = "525px";
+	  	}
+
+	  	// 限时抢购
+	  	if($id("botslider-in").offsetLeft <= 0) {
+	  		$id("botslider-l").className = "botslider-l";
+	  		$id("botslider-r").className = "botslider-r curcol_2";
+	  	}else{
+	  		$id("botslider-r").className = "botslider-r";
+	  		$id("botslider-l").className = "botslider-l curcol_1";
+	  	}
+	  	$id("botslider-r").onclick = function(){
+
+	  		$id("botslider-in").style.left = "-768px";
+	  		$id("botslider-in").style.transition = ".3s";
+	  		$id("botslider-in").style.webkitTransition = ".3s";
+	  		if($id("botslider-in").offsetLeft <= 0) {
+		  		$id("botslider-l").className = "botslider-l curcol_1";
+		  		$id("botslider-r").className = "botslider-r";
+		  	}else{
+		  		$id("botslider-r").className = "botslider-r curcol_2";
+		  		$id("botslider-l").className = "botslider-l";
+		  	}
+	  	}
+	  	$id("botslider-l").onclick = function(){
+	  		$id("botslider-in").style.left = "0px";
+	  		$id("botslider-in").style.transition = ".3s";
+	  		$id("botslider-in").style.webkitTransition = ".3s";
+	  		if($id("botslider-in").offsetLeft <= 0) {
+		  		$id("botslider-l").className = "botslider-l";
+		  		$id("botslider-r").className = "botslider-r curcol_2";
+		  	}else{
+		  		$id("botslider-r").className = "botslider-r";
+		  		$id("botslider-l").className = "botslider-l curcol_1";
+		  	}
+	  	}
+	  	setInterval(function(){
+	  		if($id("botslider-in").offsetLeft >= 0) {
+	  			$id("botslider-in").style.left = "-768px";
+	  			$id("botslider-in").style.transition = ".3s";
+	  			$id("botslider-in").style.webkitTransition = ".3s";
+		  		$id("botslider-r").className = "botslider-r";
+		  		$id("botslider-l").className = "botslider-l curcol_1";
+	  		}else if($id("botslider-in").offsetLeft <= -768) {
+	  			$id("botslider-in").style.left = "0px";
+	  			$id("botslider-in").style.transition = ".3s";
+	  			$id("botslider-in").style.webkitTransition = ".3s";
+		  		$id("botslider-l").className = "botslider-l";
+		  		$id("botslider-r").className = "botslider-r curcol_2";
+	  		}
+	  	},5000);
+		</script>
+	</body>
+</html>

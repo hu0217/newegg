@@ -1,0 +1,85 @@
+[
+	
+	{
+		"id": 201,
+		"img1": "images/A23-01D-27R.jpg",
+		"title": "斐讯 K2P AC1200 智能双频全千兆无线路由器 有线无线双千兆 WiFi穿墙",
+		"pinpai":"斐讯",
+		"limit":2,
+		"xinghao":"PSG1218",
+		"unit": "￥",
+		"price":"399.00",
+		"xh":["K2皎月白(穿墙利器)",
+            "K2P(更快更锋芒)",
+            "K3(年度旗舰)",
+            "K2P(香槟金)"
+            ],
+		"img2":[
+		"images/A23-6K2-2K_3.jpg",
+		"images/A23-6K2-2KY_02.jpg",
+		"images/A23-6K2-2KY_03.jpg",
+		"images/A23-6K2-2KY_04.jpg"]
+		
+	}, 
+	{
+		"id": 202,
+		"img1": "images/A23-6K2-2KY.jpg",
+		"title": "PHICOMM 斐讯 K2 1200M WIFI穿墙 智能双频无线路由器 PSG1218",
+		"pinpai":"斐讯",
+		"limit":6,
+		"xinghao":"K3",
+		"unit": "￥",
+		"price":"799.00",
+		"xh":["WVR450G爆款",
+            "WVR900G双频基本款",
+            "WVR1750G高速大承载",
+            "WVR2600L次旗舰发烧"
+            ],
+		"img2":[
+		"images/A23-01D-27R_1.jpg",
+		"images/A23-01D-27R_02.jpg",
+		"images/A23-01D-27R_03.jpg",
+		"images/A23-01D-27R_04.jpg"]
+	},
+	{
+		"id": 203,
+		"img1": "images/A23-6K2-2L0.jpg",
+		"title": "斐讯 K3 AC3150 双核双频全千兆高端无线路由器 智慧家庭路由",
+		"pinpai":"斐讯",
+		"limit":3,
+		"xinghao":"Kc(皓月白)A1",
+		"unit": "￥",
+		"price":"1998.00",
+		"xh":["WVR450G爆款",
+            "WVR900G双频基本款",
+            "WVR1750G高速大承载",
+            "WVR2600L次旗舰发烧"
+            ],
+		"img2":[
+		"images/A23-6K2-2L0_1.jpg",
+		"images/A23-6K2-2L0_02.jpg",
+		"images/A23-6K2-2L0_03.jpg",
+		"images/A23-6K2-2L0_04.jpg"]
+	}, 
+	{
+		"id": 204,
+		"img1": "images/A23-4PD-2J6.jpg",
+		"title": "NETGEAR 美国网件 R6900 AC1900M 双频千兆无线路由器 三外置增强天线 大覆盖 AC双频并发",
+		"pinpai":"斐讯",
+		"limit":5,
+		"xinghao":"TL-WVR450G",
+		"unit": "￥",
+		"price":"499.00",
+		"xh":["WVR450G爆款",
+            "WVR900G双频基本款",
+            "WVR1750G高速大承载",
+            "WVR2600L次旗舰发烧"
+            ],
+		"img2":[
+		"images/A23-150-1TR.jpg",
+		"images/A23-150-1TR_03.jpg",
+		"images/A23-150-1TR_04.jpg",
+		"images/A23-150-1TR_05.jpg"]
+	}
+	
+]

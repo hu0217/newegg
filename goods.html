@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/goods.css" />
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/goods.js"></script>
+		<script src="js/nav.js"></script>
+	</head>
+	<body>
+		<!--top开始-->
+		<div class="top">
+			<div class="wrap">
+				<ul class="fl topnav">
+					<li><a href="#" class="phone">掌上新蛋</a></li>
+					 <li><a href="#" class="groupbuy" id="groupbuy">企业团购</a></li>
+				</ul>
+				<div class="fr">
+					<span class="mr10 fl ">
+						<a href="register.html" target="_blank">注册</a>
+						<b>|</b>
+						<a href="login.html" target="_blank">登录</a>
+						<span class="ml10">上午好,欢迎来新蛋购物！</span>
+					</span>
+					<ul class="topnav fr">
+						<li><a href="#">我的订单</a></li>
+						<li id="mne" style="position:relative">
+							<a href="#" class="s">我的新蛋<s></s></a>
+							<div class="login" style="position: absolute;">
+								请&nbsp;<a href="login.html" target="_blank">登录</a>&nbsp;后查看
+							</div>
+						</li>
+						<li><a href="#">帮助中心</a></li>
+					    <li id="khfw">
+					    	<a href="#" class="s">客户服务<s></s></a>
+					    	<div class="call-us">
+					    		<p class="tel">400-820-4400</p>
+					    		<p>021-67072999</p>
+					    		<p>每天&nbsp; 9:00-18:00</p>
+					    		<a href="#">在线咨询</a>
+					    		 <a href="#">邮件我们</a>
+					    	</div>
+					    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--top结束-->
+		<!-- logo开始-->
+		<div>
+			<div class="wrap clearfix">
+				<div class="logo fl">
+					<a href="index.html"><img src="images/logocn.png" alt="" /></a>
+				</div>
+				<div class="search fl">
+					<input type="text"  placeholder="请输入你要搜索的关键字"/>
+					<input type="submit" value="搜索"/>
+					<p class="hot">
+						<a href="#">智能硬件</a>
+						<a href="#">iPhone8</a>
+						<a href="#">mate9</a>
+						<a href="#">Thinkpad</a>
+						<a href="#" class="no-r">电视机</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--logo结束-->
+		<!--nav开始-->
+		<div class="nav">
+			<div class="wrap menu">
+				<div class="fenlei">
+					<h3><a href="#">全部商品分类</a></h3>
+					<div class="list" id="list">
+						<ul>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class=" dropcomon drop1"></div>
+											<h4><a href="#">海外直购</a></h4>
+											<div class="det">
+												<a href="#" class="f60">影音</a>
+												<a href="#" class="f60">固态硬盘</a>
+												<a href="#">奶粉</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">数码外设</div>
+													<div class="fr">
+														<a href="#">耳机</a>|
+														<a href="#">电脑外设</a>|
+														<a href="#">手机配件</a>|
+														<a href="#" class="f60">音响</a>|
+														<a href="#">网络设备</a>|
+														<a href="#">办公设备</a>|
+														<a href="#">U盘/存储卡</a>|
+														<a href="#">解锁版手机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">电脑平板</div>
+													<div class="fr">
+														<a href="#">笔记本电脑</a>|
+														<a href="#">硬盘内存</a>|
+														<a href="#">电脑主板</a>|
+														<a href="#" class="f60">声卡显卡</a>|
+														<a href="#">笔记本电脑包</a>|
+														<a href="#">平板设备</a>|
+														<a href="#">外置硬盘</a>|
+														<a href="#">固态硬盘</a>|
+														<a href="#" class="f60">迷你主机</a>|
+														<a href="#">CPU处理器</a>|
+														<a href="#">散热设备</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">家用电器</div>
+													<div class="fr">
+														<a href="#">厨房电器</a>|
+														<a href="#">清洁电器</a>|
+														<a href="#" class="f60">个人护理</a>|
+														<a href="#">口腔清洁</a>|
+														<a href="#">生活电器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">生活百货</div>
+													<div class="fr">
+														<a href="#">男鞋女鞋</a>|
+														<a href="#">手表配件</a>|
+														<a href="#" class="f60">美妆</a>|
+														<a href="#">太阳眼镜</a>|
+														<a href="#">服饰</a>|
+														<a href="#">品牌包箱</a>|
+														<a href="#">首饰</a>|
+														<a href="#">汽车配件</a>|
+														<a href="#">文具/耗材</a>|
+														<a href="#">成人服饰</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">个人美妆</div>
+													<div class="fr">
+														<a href="#">面膜</a>|
+														<a href="#" class="f60">润肤</a>|
+														<a href="#">面部彩妆</a>|
+														<a href="#">洗发水</a>|
+														<a href="#">个人清洁</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">母婴饰品</div>
+													<div class="fr">
+														<a href="#">婴儿喂养</a>|
+														<a href="#">婴儿服饰配件</a>|
+														<a href="#">儿童玩具</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">健康保健</div>
+													<div class="fr">
+														<a href="#">营养品</a>
+													</div>
+												</div>
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p><a href="#"><img src="images/logo1.jpg" alt=""></a></p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop2"></div>
+											<h4>
+											<a href="#">手机</a>
+											<a href="#">摄影</a>
+											<a href="#">苹果</a>
+											</h4>
+											<div class="det">
+												<a href="#" class="f60">智能手机</a>
+												<a href="#">微单</a>
+												<a href="#" class="f60">数码包</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">手机</div>
+													<div class="fr">
+														<a href="#">智能手机</a>|
+														<a href="#">非智能手机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">苹果专区</div>
+													<div class="fr">
+														<a href="#"> iPhone</a>|
+														<a href="#">iPad</a>|
+														<a href="#">Watch</a>|
+														<a href="#" class="f60">iMac</a>|
+														<a href="#">Macbook</a>|
+														<a href="#">iPhone附件</a>|
+														<a href="#">iPad附件</a>|
+														<a href="#" class="f60">苹果原装配件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">家手机配件</div>
+													<div class="fr">
+														<a href="#">手机电池/充电器</a>|
+														<a href="#">手机数据线</a>|
+														<a href="#" class="f60">手机通用配件</a>|
+														<a href="#">iPhone附件</a>|
+														<a href="#">移动电源</a>|
+														<a href="#">手机耳机</a>|
+														<a href="#">蓝牙耳机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">智能配件</div>
+													<div class="fr">
+														<a href="#">智能穿戴/设备</a>|
+														<a href="#">无人机</a>|
+														<a href="#" class="f60"> 平衡机</a>|
+														<a href="#">游戏机</a>|
+														<a href="#">游戏周边</a>|
+														<a href="#">游戏手柄</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">数码摄影</div>
+													<div class="fr">
+														<a href="#">单反相机</a>|
+														<a href="#">单电/微单</a>|
+														<a href="#">镜头</a>|
+														<a href="#" class="f60">数码相机</a>|
+														<a href="#">数码摄像机</a>|
+														<a href="#">特殊相机</a>|
+														<a href="#">照片打印机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">数码附件</div>
+													<div class="fr">
+														<a href="#" class="f60">单反配件</a>|
+														<a href="#">镜头滤镜</a>|
+														<a href="#" class="f60">数码贴膜/清洁</a>|
+														<a href="#">数码包</a>|
+														<a href="#">三脚架/云台</a>|
+														<a href="#">电池充电器</a>|
+														<a href="#">存储卡</a>
+													</div>
+												</div>
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p>
+													<a href="#"><img src="images/apple.jpg" alt=""></a>
+													
+												</p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop3"></div>
+											<h4>
+											<a href="#">电脑</a>
+											<a href="#">外设</a>
+											<a href="#">办公</a>
+											</h4>
+											<div class="det">
+												<a href="#" class="f60">笔记本</a>
+												<a href="#"  class="f60">智能硬件</a>
+												<a href="#">硬盘</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">电脑整机</div>
+													<div class="fr">
+														<a href="#">笔记本</a>|
+														<a href="#">台式机</a>|
+														<a href="#" class="f60">笔记本配件</a>|
+														<a href="#">平板配件</a>|
+														<a href="#">平板</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">电脑配件</div>
+													<div class="fr">
+														<a href="#"> 主板</a>|
+														<a href="#" class="f60">显卡</a>|
+														<a href="#">硬盘</a>|
+														<a href="#">SSD固态硬盘</a>|
+														<a href="#">机箱</a>|
+														<a href="#">电源</a>|
+														<a href="#" class="f60">显卡器</a>|
+														<a href="#">散热器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">电脑外设</div>
+													<div class="fr">
+														<a href="#">键盘</a>|
+														<a href="#">鼠标</a>|
+														<a href="#">U盘</a>|
+														<a href="#" class="f60">移动硬盘</a>|
+														<a href="#">存储卡</a>|
+														<a href="#">手绘板</a>|
+														<a href="#">插座</a>|
+														<a href="#">鼠标垫/附件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">网络设备</div>
+													<div class="fr">
+														<a href="#">路由器</a>|
+														<a href="#" class="f60">网卡</a>|
+														<a href="#">无线AP</a>|
+														<a href="#">交换机</a>|
+														<a href="#">网络配件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">音频设备</div>
+													<div class="fr">
+														<a href="#" class="f60">耳机/耳麦</a>|
+														<a href="#">音箱</a>|
+														<a href="#">手机耳机</a>|
+														<a href="#">蓝牙耳机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">智能配件</div>
+													<div class="fr">
+														<a href="#">智能穿戴/设备</a>|
+														<a href="#">无人机</a>|
+														<a href="#">平衡机</a>|
+														<a href="#" class="f60">游戏机</a>|
+														<a href="#">游戏周边</a>|
+														<a href="#">游戏手柄</a>|
+														<a href="#">智能穿戴</a>|
+														<a href="#">苹果配件</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">办公设备</div>
+													<div class="fr">
+														<a href="#">量仓式打印机</a>|
+														<a href="#">激光打印机</a>|
+														<a href="#">喷墨打印机</a>|
+														<a href="#" class="f60">针式打印机</a>|
+														<a href="#">投影仪</a>|
+														<a href="#">传真机</a>|
+														<a href="#">扫描机</a>|
+														<a href="#">复印机</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">打印材料</div>
+													<div class="fr">
+														<a href="#">墨盒</a>|
+														<a href="#">硒鼓/墨粉</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">办公文具</div>
+													<div class="fr">
+														<a href="#">文件管理</a>|
+														<a href="#" class="f60">常用桌面文件</a>|
+														<a href="#">书写修正用品</a>
+													</div>
+												</div>
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p><a href="#"><img src="images/logo1.jpg" alt=""></a></p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop4"></div>
+											<h4>
+											<a href="#">家用电器</a>
+											</h4>
+											<div class="det">
+												<a href="#">电饭煲</a>
+												<a href="#" class="f60">电视</a>
+												<a href="#">净水器</a>
+											</div>
+										</div>
+
+									</dt>
+									<dd>
+										<div class="drop-in clearfix">
+											<div class="drop-in-l fl">
+												<div>
+													<div class="fl" style="width:80px;">平板电视</div>
+													<div class="fr">
+														<a href="#" class="f60">40-60英寸</a>|
+														<a href="#">大于60英寸</a>|
+														<a href="#">小于40英寸</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">冰/洗/空</div>
+													<div class="fr">
+														<a href="#"> 空调</a>|
+														<a href="#">洗衣/干衣机</a>|
+														<a href="#">冰箱/冷柜</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">视听设备</div>
+													<div class="fr">
+														<a href="#">家庭影院</a>|
+														<a href="#" class="f60">迷你音响/收录机</a>|
+														<a href="#">音箱</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">家庭电器</div>
+													<div class="fr">
+														<a href="#" class="f60">取暖电器</a>|
+														<a href="#">电熨斗/挂烫机</a>|
+														<a href="#">吸尘器/清洁机</a>|
+														<a href="#">加湿器</a>|
+														<a href="#" class="f60">空气净化器</a>|
+														<a href="#">饮水机</a>|
+														<a href="#">净水设备</a>|
+														<a href="#">电风扇/空调扇</a>|
+														<a href="#">制氧机</a>|
+														<a href="#">智能马桶盖>|
+														<a href="#">驱蚊器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">个护健康</div>
+													<div class="fr">
+														<a href="#">电吹风</a>|
+														<a href="#">电动牙刷</a>|
+														<a href="#" class="f60">美容美发器</a>|
+														<a href="#">剃须/脱毛器</a>|
+														<a href="#">足浴盆</a>|
+														<a href="#">按摩器材</a>|
+														<a href="#">体重脂肪测量</a>|
+														<a href="#">电子体温计</a>|
+														<a href="#">血压计</a>|
+														<a href="#">计步器</a>
+													</div>
+												</div>
+												<div>
+													<div class="fl" style="width:80px;">厨房电器</div>
+													<div class="fr">
+														<a href="#">电磁炉</a>|
+														<a href="#">电饭煲</a>|
+														<a href="#">电水壶</a>|
+														<a href="#">电压力锅</a>|
+														<a href="#" class="f60">豆浆机</a>|
+														<a href="#">多用途电锅</a>|
+														<a href="#">咖啡机</a>|
+														<a href="#">料理/榨汁机</a>|
+														<a href="#">食品加工机</a>|
+														<a href="#" class="f60">微波炉/电烤箱</a>|
+														<a href="#">酸奶机/冰淇淋机</a>|
+														<a href="#">电饼铛/煎烤机</a>|
+														<a href="#">面包机/煮蛋器</a>|
+														<a href="#">豆浆机</a>
+													</div>
+												</div>
+
+											</div>
+											<div class="drop-in-r fl">
+												<p>热门品牌</p>
+												<p><a href="#"><img src="images/logo1.jpg" alt=""></a></p>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li class="last" id="last">
+								<dl>
+									<dt>
+										<div class="drop">
+											<div class="dropcomon drop5"></div>
+											<h4>
+											<a href="#">生活百货</a>
+											</h4>
+											<div class="det1">
+												<p class="det-in">
+													<a href="#" class="f60">汽车用品</a>
+													<a href="#">个人清洁</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">汽车养护</div>
+																<div class="fr">
+																	<a href="#">汽车清洁</a>|
+																	<a href="#">保养添加剂</a>|
+																	<a href="#" class="f60">机油</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;"> 汽车配件</div>
+																<div class="fr">
+																	<a href="#" class="f60">雨刷雨刮</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">汽车装饰</div>
+																<div class="fr">
+																	<a href="#">香水除味</a>|
+																	<a href="#">功能精品</a>|
+																	<a href="#">内饰装潢</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">汽车电子</div>
+																<div class="fr">
+																	<a href="#">车载数码配件</a>|
+																	<a href="#">车载生活电器</a>|
+																	<a href="#" class="f60"> 车载电源</a>|
+																	<a href="#">蓝牙耳机</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">汽车安全</div>
+																<div class="fr">
+																	<a href="#" class="f60">照儿童安全座椅</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家庭常备</div>
+																<div class="fr">
+																	<a href="#">保健用品</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">健康电器</div>
+																<div class="fr">
+																	<a href="#">足浴盆</a>|
+																	<a href="#">按摩器材</a>|
+																	<a href="#">体重脂肪测量</a>|
+																	<a href="#">电子体温计</a>|
+																	<a href="#" class ="f60">血压计</a>|
+																	<a href="#">计步器</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+																
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">家居</a>
+													<a href="#">厨用</a>
+													<a href="#">钟表</a>
+													<a href="#">礼品</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">珠宝首饰</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+																
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">服饰</a>
+													<a href="#">女神</a>
+													<a href="#">内衣</a>
+													<a href="#">珠宝</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">珠宝首饰</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+																
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">母婴</a>
+													<a href="#">玩具</a>
+													<a href="#">食品</a>
+													<a href="#">酒饮</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">珠宝首饰</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+																
+															</p>
+														</div>
+													</div>
+												</p>
+												<p>
+													<a href="#">鞋靴</a>
+													<a href="#">箱包</a>
+													<a href="#">运动</a>
+													<a href="#">户外</a>
+													<div class="drop-in clearfix det11">
+														<div class="drop-in-l fl">
+															<div>
+																<div class="fl" style="width:80px;">珠宝首饰</div>
+																<div class="fr">
+																	<a href="#">木质饰品</a>|
+																	<a href="#">黄金K金</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">名品钟表</div>
+																<div class="fr">
+																	<a href="#">瑞士品牌</a>|
+																	<a href="#" class="f60">欧美品牌</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家居用品</div>
+																<div class="fr">
+																	<a href="#">台灯/护眼灯</a>|
+																	<a href="#">收纳保鲜</a>|
+																	<a href="#">保险箱柜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">厨具餐具</div>
+																<div class="fr">
+																	<a href="#">茶具/酒具</a>|
+																	<a href="#">厨房配件</a>|
+																	<a href="#" class="f60">刀具砧板</a>|
+																	<a href="#">收纳保鲜</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">家纺</div>
+																<div class="fr">
+																	<a href="#">卫浴家纺</a>|
+																	<a href="#">床品用品</a>|
+																	<a href="#" class="f60">床品套件</a>|
+																	<a href="#">毯子</a>|
+																	<a href="#" class="f60">被子</a>
+																</div>
+															</div>
+															<div>
+																<div class="fl" style="width:80px;">精美礼品</div>
+																<div class="fr">
+																	<a href="#">收藏品</a>|
+																	<a href="#">瑞士军刀</a>
+																</div>
+															</div>
+														</div>
+														<div class="drop-in-r fl">
+															<p>热门品牌</p>
+															<p>
+																<a href="#"><img src="images/apple.jpg" alt=""></a>
+																
+															</p>
+														</div>
+													</div>
+												</p>
+
+											</div>
+										</div>
+
+									</dt>
+									
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="fl nav1">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">限时抢购</a></li>
+					<li><a href="#">团团赚</a></li>
+					<li><a href="#">海外直购</a></li>
+					<li><a href="#">智能硬件</a></li>
+					<li><a href="#">爱车配</a></li>
+					<li><a href="#">二手宝库</a></li>
+				</ul>
+				<div class="tip" id="tip">
+					<dl class="cart">
+						<dt>
+							<a href="#">
+								购物车
+								<span>0</span>
+								件
+								<s></s>
+							</a>
+						</dt>
+						<dd>
+							<div class="tip-iner">
+								<s class="s1"></s>
+								您还没有购买商品，快去挑选吧！
+							</div>
+						</dd>
+					</dl>
+					<dl class="call">
+						<dt>
+							<a href="#">
+								收藏提醒
+								 <s></s>
+							</a>
+						</dt>
+						<dd class="tip-dd">
+							<div class="tip-iner">
+								请登录后查看
+								<a href="#">登录</a>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<!--nav结束-->
+		<!--goods开始-->
+		<div class="crumb-out">
+			<div class="wrap">
+				<div class="crumb-in-l fl">
+					<a href="#">首页</a>
+					<span>></span>
+					<a href="#">海外直购</a>
+					<span>></span>
+					<a href="#">耳机</a>
+					<span>></span>
+					<a href="#">美国直邮</a>
+					<span>></span>
+					 <strong>产品编号：S6C-4PU-1PH_320</strong>
+				</div>
+				<div class="crumb-in-r fr">
+					<span class="fl">可以对比5个商品</span>
+					<dl class="compare">
+						<dt class="fr">
+							<a href="#"> 马上对比</a>
+						</dt>
+						<dd></dd>
+						<dd></dd>
+						<dd></dd>
+						<dd></dd>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="fixed clearfix">
+			<div class="wrap">
+				<div class="fixed-l fl">
+					<ul >
+						<li class="cur">
+							<a href="javascript:void(0);">商品详情</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">用户评论(4)</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">具体参数</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">售后服务</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">商品咨询</a>
+						</li>
+					</ul>
+				</div>
+				<div class="fixed-r fr mt10">
+					<label for="fixed-r-in" class="fixed-check">
+						<input type="checkbox" id="fixed-r-in" />
+						将商品加入对比
+					</label>
+				</div>
+			</div>
+			
+		</div>
+		<div class="fixed2 clearfix">
+			<div class="fixed-l fl wrap">
+				<ul >
+					<li class="cur">
+						<a href="javascript:void(0);">商品详情</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">用户评论(4)</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">具体参数</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">售后服务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">商品咨询</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="goodsall clearfix">
+				<div class="goodsall-l fl">
+					<div class="smallImg" id="smallImg">
+						<img  class="smI" />
+						<div class="smallArea" id="smallArea"></div>
+						<div class="bigArea" id="bigArea">
+							<img class="bigImg" id="bigImg"  alt=""/>
+						</div>
+					</div>
+					<div class="goodsall-bt">
+						<!--<a href="javascript:void(0);" class="prev arrow"></a>-->
+						<ul id="piclist">
+							<!--<li class="cur"></li>
+							<li></li>
+							<li></li>
+							<li></li>-->
+						</ul>
+						<!--<a href="javascript:void(0);" class="next arrow"></a>-->
+					</div>
+				</div>
+				<div class="goodsall-r  fr clearfix">
+					<div class="goods-title">
+						<h1></h1>
+					</div>
+					<div class="goods-l fl clearfix">
+						<ul class="clearfix">
+							<li class="pinpai">
+								<div class="goodsname fl">
+									品&nbsp;&nbsp;&nbsp;&nbsp;牌
+								</div>
+								<div class="goodsdata fl"></div>
+							</li>
+							<li class="xinghao">
+								<div class="goodsname fl">
+									产品型号：
+								</div>
+								<div class="goodsdata fl"></div>
+							</li>  
+							<!--<li class="xianjia">
+								<div class="goodsname fl">
+									新&nbsp;&nbsp;蛋&nbsp;&nbsp;价	:
+								</div>
+								<div class="goodsdata fl">
+									￥&nbsp;
+									<del>2079.00</del>
+								</div>
+							</li>
+							<li>
+								<div class="goodsname fl">
+									税费预估:
+								</div>
+								<div class="goodsdata fl">
+									￥&nbsp;
+									<span>130.00</span>
+									<a href="javascript:void(0);" style="color:#039;">税费计算方法</a>
+								</div>
+							</li>-->
+							<li class="price-now">
+								<div class="goodsname fl">
+									新&nbsp;&nbsp;蛋&nbsp;&nbsp;价	:
+								</div>
+								<div class="goodsdata fl">
+									<span class="goodsdata-in">
+										<em>￥&nbsp;</em>
+										<strong></strong>
+									</span>
+								</div>
+							</li>
+							<li class="goods-support">
+								<div class="goodsname fl">
+									商品支持:
+								</div>
+								<div class="goodsdata fl">
+									<a href="javascript:void(0);">不支持无理由退</a>
+								</div>
+							</li>
+							<li class="goods-color">
+								<div class="goodsname fl">
+									型&nbsp;&nbsp;号:
+								</div>
+								<div class="goodsdata fl">
+									<!--<a href="javascript:void(0);">k2皎月白（穿墙利器）</a>
+									<a href="javascript:void(0);">k2p（更快更锋芒）</a>
+									<a href="javascript:void(0);">k3c(新潮澎湃)</a>
+									<a href="javascript:void(0);">k3(百年旗舰)<s class="xh"></s></a>-->
+								</div>
+							</li>
+							<li class="goods-cnts">
+								<div class="goodsname fl">
+									数&nbsp;&nbsp;量:
+								</div>
+								<div class="goodsdata fl">
+									<a href="javascript:void(0);" class="plus-minus minus">-</a>
+									<input type="text" value="1" maxlength="3" class="num">
+									<a href="javascript:void(0);" class="plus-minus plus">+</a>
+									<!--<span class="goods-cnts-tips">每日限购：<span></span></span>-->
+									<span style="color:green">&nbsp;&nbsp;&nbsp;&nbsp;库存：有货</span>
+									<span class="wholePrice">购买数量已满足条件，立享批发价<b></b>元/件</span>
+								</div>
+							</li>
+						</ul>
+						
+						<div class="buy clearfix">
+							<a href="login.html" class="buyquick">立即购买</a>
+							<a href="javascript:void(0);" class="cartquick">加入购物车</a>
+							<div class="buy-btn">
+								<a href="javascript:void(0);" class="gray-btn">加入收藏夹</a>
+								<div class="gray-btn fav liked">
+									<div class="num-wrap">
+										<div class="fav-num">
+											<p style="top: 33px; opacity: 1;">1</p>
+											<p style="top: 20px; opacity: 0;">0</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="share-icon">
+								<a href="javascript:void(0);" class="shares shares1"></a>
+								<a href="javascript:void(0);" class="shares shares2"></a>
+								<a href="javascript:void(0);" class="shares shares3"></a>
+								<a href="javascript:void(0);" class="shares shares4"></a>
+								<a href="javascript:void(0);" class="less" id="share_icon"></a>
+								<a href="javascript:void(0);" class="shares shares5"></a>
+								<a href="javascript:void(0);" class="shares shares6"></a>
+							</div>
+						</div>
+					</div>
+					<div class="goods-r fl">
+						<p class="goods-notice">
+							<a href="javascript:void(0)">降价通知</a>
+						</p>
+						<div>
+							<div><img src="images/fd6477774146481894ae4c501622c6c0.jpg" alt=""></div>
+							<p>综合得分</p>
+							<p>所&nbsp;&nbsp;在&nbsp;&nbsp;地：USA</p>
+						</div>
+						<div class="commet">
+							<div class="commet-score fl">
+								<strong>5.0</strong>
+							</div>
+							<a href="javascript:void(0)">
+								<p  class="egg-score egg-score5"></p>
+							</a>
+							<br>
+							<br>
+							<a href="javascript:void(0);" id="showReviewLink" class="showReview">已有11人评论</a>
+						</div>
+						<div class="good_code">
+							<div class="code-in">
+								<img src="images/ma.jpg" alt="" width="100" height="100"/>
+								<span>转到手机上看</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="gotocount">
+					<a href="javasctipt:;" class="close"></a>	
+					<div class="count-content">
+						<p>商品已经成功加入购物车</p>
+						<div>
+							<a class="goonshopping common" href="javascript:void(0);">继续购物</a>
+							<a class="common tocount" href="cart.html" target="_blank">去结算</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="detail">
+				<div class="detail-in">
+					<div class="error fr">
+						如果您发现商品信息不准确，<a href="javascript:void(0)">欢迎纠错</a>
+					</div>
+					<div class="detail-info">
+						<div class="info">
+							<div class="info-title">
+								<img src="images/forTitle.jpg" alt="">
+							</div>
+							<div class="clearfix">
+								<div class="fl" style="background: #FF9500; width: 25%; height: 116px">
+									<div class="forIntroSecCon forIntroSecConSel"><h2>全球精选</h2><div>精选新蛋海外优质商品中文轻松购物体验</div></div>
+								</div>
+								<div class="fl" style="background: #FF5758; width: 25%; height: 116px">
+									<div class="forIntroSecCon forIntroSecConPol"><h2>低价保障</h2><div>缩减中间环节 确保低价</div></div>
+								</div>
+								<div class="fl" style="background: #67A90F; width: 25%; height: 116px">
+									<div class="forIntroSecCon forIntroSecConPron"><h2>正品保证</h2><div>百分百正品保证海外直送</div></div>
+								</div>
+								<div class="fl" style="background: #0DB7C9; width: 25%; height: 116px">
+									<div class="forIntroSecCon forIntroSecConEns"><h2>售后保障</h2><div>自签收日起，产品出现质量问题30天内退货处理</div></div>
+								</div>
+							</div>
+							<div class="clearfix qa">
+								<div class="qustionAns fl"><div class="qustionAnsCon">
+									<div class="mb10 clearfix"><span class="qustionAnsConQicon fl">Q</span><span class="qustionAnsConQ fl">下单后也可能出现缺货吗？</span></div>
+									<div class="clearfix"><span class="qustionAnsConAicon fl">A</span><span class="qustionAnsConA fl">新蛋网的海外直购商品为海外的优质商品，在这个竞争激烈的全球市场上，热销商品往往流通迅速，且由于时差的问题，可能会存在下单之后缺货的情况。缺货会将你支付的钱款全部退回。</span></div>
+								</div></div>
+								<div class="fl qustionAns">
+									<div class="qustionAnsCon">
+										<div class="mb10 clearfix"><span class="qustionAnsConQicon fl">Q</span><span class="qustionAnsConQ fl">下单后多久可以收到商品？</span></div>
+										<div class="clearfix"><span class="qustionAnsConAicon fl">A</span><span class="qustionAnsConA fl">商品价格为2000元以下的，一线城市10-15个工作日可收到货物，二线城市可能会增加2-4天；2000元以上的由于2016年4月6日海关清关政策的更改，请按照各海关的清关时间为准，预计在30个工作日左右。</span></div></div>
+								</div>
+								<div class="fl qustionAns"><div class="qustionAnsCon"><div class="mb10 clearfix"><span class="qustionAnsConQicon fl">Q</span><span class="qustionAnsConQ fl">海外购商品都是正品吗？提供发票吗？</span></div>
+									<div class="clearfix"><span class="qustionAnsConAicon fl">A</span><span class="qustionAnsConA fl">海外直购频道所有商品都是精选自全球品牌提供商及最高等级优质卖家，由海外委托国际物流发送到个人用户手中。由于海外购商品均来自海外，海外信用体系与中国不同，海外国家不提供发票，所以海外购的订单均无发票。</span></div>
+								</div></div>
+								<div class="fl qustionAns noBorder"><div class="qustionAnsCon">
+									<div class="mb10 clearfix"><span class="qustionAnsConQicon fl">Q</span><span class="qustionAnsConQ fl">有没有退换货保障？</span></div>
+									<div class="clearfix"><span class="qustionAnsConAicon fl">A</span><span class="qustionAnsConA fl">我们提醒消费者仔细阅读商品尺寸，材质，外观等方面相关说明。商品如有质量问题，可在商品签收之日起30天内申请退货。由于海外购商品换货物流费用高昂，所以暂不支持换货。</span></div>
+								</div></div>
+							</div>
+							<div class="TipIll clearfix"><div class="fl forTip"><div class="forTipCon"><h3 class="forTipTit">新蛋海外直购电器使用提示：</h3>
+								<ul>
+									<li>因新蛋“海外直购”商品100%来自美国新蛋，电器商品适用于美国电压环境(通常为110-220伏)，请您在购买电器商品前务必确认该商品是否支持您所在地的电压（如中国通用电压为220-240伏)。如商品详情页面无具体介绍，请登录品牌官网查看相关商品的电压介绍。</li>
+									<li>如该商品不支持您所在地电压，则需要使用变压器（也叫转换器）进行变压后方可使用，否则可能造成电器毁损或其他损失。当您购买和使用变压器时，请严格参考和遵守变压器的使用说明，以免造成电器毁损或其他损失。</li>
+									<li>如果没有按电器商品电压说明使用或者因变压器使用不当造成商品毁损，我们将无法提供售后服务。</li>
+								</ul></div></div>
+								<div class="fl forTip forbg">
+									<div class="forTipCon noBorder">
+										<h3 class="forTipTit">新蛋海外直购收货人信息填写说明：</h3>
+										<ul>
+											<li>由于海淘订单的特殊性，订单一旦付款后将无法取消及更改订单信息，请消费者谨慎下单。</li>
+											<li><b>据中国海关的要求，进口货物需要向海关提供收货人的真实姓名和身份证信息,<span style="font-family: 宋体">翻新品需在下单时上传身份证信息</span></b>。</li>
+											<li>新蛋“海外直购”商品均为客户在中国新蛋网站直接购买于海外网站，并通过国际物流交付客户手中。</li>
+											<li>为确保包裹顺利清关，请提交订单时填写真实收货人姓名及身份证号码(收货人姓名与身份证姓名必须一致）。</li>
+											<li>如遇海关特殊要求，可能需提供真实收货人身份证照片，届时请配合新蛋网客服操作。</li>
+											<li>新蛋网客服仅会通过021-67072666 / 67072999联系您，请拒绝向其他任何人提供真实收货人身份信息。</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--回到顶部-->
+			<div class="goTop" id="goTop">
+				<img src="images/ToTop_Normal.gif" alt="" id="go_top">
+			</div>
+			<div class="pro_table_t1 mb40">
+				<font face="微软雅黑" size="6">Klipsch杰士 XR8i 通话式耳机 苹果版</font>
+				<img src="images/productdis_Newegggg.jpg" border="0" width="100%">
+				<table width="1000" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+					<tr>
+						<th colspan="2" class="title">Model</th>
+					</tr>
+					<tr>
+						<th>Brand</th>
+						<td>Klipsch</td>
+					</tr>
+					<tr>
+						<th>Model</th>
+						<td>XR8i</td>
+					</tr>
+					<tr>
+						<th colspan="2" class="title">General Spec</th>
+					</tr>
+					<tr>
+						<th>Color</th>
+						<td>Silver/Black</td>
+					</tr>
+					<tr>
+						<th colspan="2" class="title">General SPEC</th>
+					</tr>
+					<tr>
+						<th>Connector</th>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<th colspan="2" class="title">其他特点</th>
+					</tr>
+					<tr>
+						<th>特点</th>
+						<td>KG-2365 AcuPass(R) Two-Way Hybrid Driver  KG-065 Dynamic Woofer  KG-723 Balanced Armature Tweeter  Die-Cast Zinc and Co-Molded Elastomer Housing  Patented Oval Ear Tips (4 Different Pairs)</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="reviews_history" style="" id="divNearestBrowse">
+				<div class="goods_gd_t1">
+					<div class="good_gd_title">
+						<span>浏览历史</span>
+						<a class="fr clear" href="javascript:void(0);" >[清空]</a>
+					</div>
+					<div class="good_t1_cnt">
+						<div class="good_t1_gd">
+							<div class="good_t1_list">
+								<ul id="divNearestBrowseList" hasload="true">
+									<li>
+										<a href="http://www.newegg.cn/Product/33-c14-027.htm" target="_blank"><img src="http://c3.neweggimages.com.cn/neweggpic2/neg/P125/A23-150-01N.jpg?v=B52AFE4932B44FD89396" alt="TP-LINK 普联 TL-SG1024T 24口全千兆以太网交换机 标准机架式 3种功能运行模式" title="TP-LINK 普联 TL-SG1024T 24口全千兆以太网交换机 标准机架式 3种功能运行模式" width="125" height="94"></a>
+										<p title="TP-LINK 普联 TL-SG1024T 24口全千兆以太网交换机 标准机架式 3种功能运行模式">
+											<a href="http://www.newegg.cn/Product/33-c14-027.htm" target="_blank">TP-LINK 普联 TL-SG1024T 24口全千兆以太网交换机 标准机架式 3种功能运行模式</a>
+										</p>
+										<p>
+											<span>¥499.00</span>
+										</p>
+									</li>
+									<li>
+										<a href="http://www.newegg.cn/Product/A29-28R-2FWN01.htm" target="_blank"><img src="http://c3.neweggimages.com.cn/neweggpic2/neg/P125/A29-28R-2FWN01.jpg?v=" alt="THERMOS 膳魔师 真空不锈钢保温杯 焖烧杯 食物罐 SK-3020 CBW 咖啡色 710ML 保温保冷两用" title="THERMOS 膳魔师 真空不锈钢保温杯 焖烧杯 食物罐 SK-3020 CBW 咖啡色 710ML 保温保冷两用" width="125" height="94"></a>
+										<p title="THERMOS 膳魔师 真空不锈钢保温杯 焖烧杯 食物罐 SK-3020 CBW 咖啡色 710ML 保温保冷两用">
+											<a href="http://www.newegg.cn/Product/A29-28R-2FWN01.htm" target="_blank">THERMOS 膳魔师 真空不锈钢保温杯 焖烧杯 食物罐 SK-3020 CBW 咖啡色 710ML 保温保冷两用</a>
+										</p>
+										<p>
+											<span>¥309.00</span>
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<!--goods结束-->
+		<!--footer开始-->
+		 <div class="footer">
+		 	<div class="wrap footer-in">
+		 		<div class="message clearfix">
+		 			<dl class="helpcenter">
+			 			<dt>新手上路</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">怎样购物</a></li>
+			 			 		<li><a href="#">支付常见问题</a></li>
+			 			 		<li><a href="#">免运费政策</a></li>
+			 			 		<li><a href="#">发票须知</a></li>
+			 			 		<li><a href="#">签收验货流程</a></li>
+			 			 		<li><a href="#">用户评论/咨询</a></li>
+			 			 		<li><a href="#">大件商品订购流程</a></li>
+		
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="service">
+			 			<dt>售后服务</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">退换货政策</a></li>
+			 			 		<li><a href="#">订单查询</a></li>
+			 			 		<li><a href="#">售后申请</a></li>
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="special-service">
+			 			<dt>特色服务</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">关于会员制</a></li>
+			 			 		<li><a href="#">价格保护</a></li>
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="cooperate">
+			 			<dt>申请合作</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">申请成为供应商</a></li>
+			 			 		<li><a href="#">申请入驻开放平台</a></li>
+			 			 		<li><a href="#">友情合作</a></li>
+			 			 		<li><a href="#">网站联盟</a></li>
+			 			 		<li><a href="#">企业客户</a></li>
+		
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+			 		<dl class="about-us">
+			 			<dt>关于我们</dt>
+			 			 <dd>
+			 			 	<ul>
+			 			 		<li><a href="#">新蛋集团</a></li>
+			 			 		<li><a href="#">联系我们</a></li>
+			 			 		<li><a href="#">诚聘英才</a></li>
+			 			 	</ul>
+			 			 </dd>
+			 		</dl>
+		 		</div>
+		 		<div class="in-footer">
+		 			<a href="#" class="item1"></a>
+		 			<a href="#" class="item2"></a>
+		 			<a href="#" class="item3" style="position: relative;">
+		 				<span style="position: absolute;font-size:12px;bottom: 4px;left: 41px;color: #001b75;">3103108092</span>
+		 			</a>
+		 			<a href="#" class="item4"></a>
+		 			<a href="#" class="item5"></a>
+		 			<p>
+		 				新蛋集团网站：
+		 				<a href="#" class="ml5" style="color:#484848;">美国新蛋</a>
+		 				<a href="#" class="ml10" style="color:#484848;">中国新蛋</a>
+		 				 <a href="#" class="ml10" style="color:#484848;">加拿大新蛋</a>
+		 				 <a href="#" class="ml10" style="color:#484848;">新蛋软件</a>
+		 			</p>
+		 			<p>&copy;&nbsp;2001-2017 新蛋商贸（上海）有限公司 &nbsp;版权所有&nbsp; <a href="#">沪ICP备:16033615</a></p>
+		 		</div>
+		 	</div>
+		 </div>
+		<!--footer结束-->
+	</body>
+</html>

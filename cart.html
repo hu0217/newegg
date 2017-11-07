@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>购物车</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/cart.js"></script>
+</head>
+<body>
+  <div class="head">
+    <div class="wrap header clearfix">
+      <a href="javascript:void(0);" class="logo fl"><img src="images/logocn_1213.png"></a>
+      <div class="fr gray mt10">
+        <div class="gray-t">
+          <span  class="fl mr10">
+            <span>
+              <a href="register.html" target="_blank">注册</a>
+               <b>|</b>
+               <a href="login.html" target="_blank">登录</a>
+            </span>
+            <span class="welcome ml10">下午好,欢迎来新蛋购物！</span>
+          </span>
+          <img style="vertical-align:middle;" src="images/contact.jpg">
+        </div>
+        <div class="mt10 right">
+          江浙沪部分地区79元包邮，全国部分地区199元包邮。
+          <a class="funcLink" href="javascript:void(0);">查看详情</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="step">
+      <div class="stepmark fl currentstep">
+        <span></span>
+        购物车
+      </div>
+      <div class="stepmark fl">
+        <span></span>
+        确认订单
+      </div>
+      <div class="stepmark fl">
+        <span></span>
+        提交成功
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray">
+    <div class="wrap gray-main">
+      <div class="content">
+      	<!--没商品时显示-->
+        <div id="ShoppingContent">
+          <div class=" tips mb20" id="instalmentTips" style="display:none;">
+              如果分期商品金额大于等于30000元，将不能使用招商银行信用卡进行分期付款，给您带来不便请谅解。
+          </div>
+
+          <div class="ShoppingContentTable" style="border:1px solid #bfbfbf;">
+              <em class="bg_show"></em>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" id="PorductList" style="word-break:break-all;border-collapse:collapse;">
+                  <tbody><tr>
+                  <th height="32" align="left" valign="middle" bgcolor="#FFFFFF" class="bl_gray bg01" scope="col">
+                      <span class="ml10">我的购物车</span>
+                      <span class="ml10" id="PingAnLable"></span>
+                  </th>
+
+                  </tr>
+                  <tr valign="top">
+                      <td bgcolor="#FFFFFF">
+                          <table id="shoppingCartList" width="100%" border="0" cellspacing="0" cellpadding="0">
+
+
+                                  <tbody><tr id="shoppingCartNull">
+                                      <td height="190" class="f_black" align="center" valign="middle" bgcolor="#FFFFFF">
+
+               您的购物车内尚未添加产品, 请尽情在新蛋网选购您要购买的产品吧!<a class="funcLink mr10 ml10" href="index.html" onclick="ShoppingCartUI.ContinueShopping();">继续购物<span class="songti12">&gt;&gt;</span></a>
+               祝您购物愉快!
+
+                                      </td>
+                                  </tr>
+
+
+
+
+                          </tbody></table>
+                      </td>
+
+                      <input type="hidden" id="hidCouldSelectGift" value="0">
+                  </tr>
+              </tbody>
+              </table>
+          </div>
+        </div>
+
+        <!--有商品时显示-->
+        <div class="mycart clearfix">
+        	<div class="mycart-t clearfix">
+        		<span class="mycart-t-l fl">我的购物车</span>
+        		<span class="mycart-t-r fr">购物车结算</span>
+        	</div>
+        	<div class="mycart-b clearfix">
+        		<div class="mycart-b-l fl">
+        			<div class="mycart-b-l-t clearfix">
+        				<div class="choose"><input type="checkbox" id="allchecked" checked="checked"/>全选</div>
+	    					<div class="goodsname">商品名称</div>
+	    					<div class="single-price">单价</div>
+	    					<div class="num">数量</div>
+	    					<div class="count-price">小计</div>
+	    					<div class="operate">操作</div>
+        			</div>
+        			
+        			<ul class="cartprice">
+        				<!--<li>
+        					<div class="choose"><input type="checkbox" /></div>
+        					<div class="goodsname">
+        						<img src="images/226x241_1.jpg" alt="" class="fl"/>
+        						<p class="fl">
+												NETGEAR 美国网件 R6900 AC1900M 双频千兆无线路由器 三外置增强天线 大覆盖 AC双频并发
+												NETGEAR 美国网件 R6900 AC1900M 双频千兆无线路由器 三外置增强天线 大覆盖 AC双频</p>
+        					</div>
+        					<div class="single-price">￥609.00</div>
+        					<div class="num">
+        						<input type="text" class="text" value="1"/>
+        						<input class="reduce" type="text" value="-" />
+        						<input class="add" type="text" value="+" />
+        					</div>
+        					<div class="count-price">$118.00</div>
+        					<div class="operate">
+        						<a href="javascript:;">移除</a>
+        						<a href="javascript:;">移入收藏夹</a>
+        					</div>
+        				</li>-->
+        				
+
+        			</ul>
+        		</div>
+        		<div class="mycart-b-r fr">
+        			<p >
+        				<span>金额:</span>
+        				<span class="price fr"></span>
+        			</p>
+        			<p>
+        				<span>合计:</span>
+        				<span class="price fr"></span>
+        			</p>
+        			<a href="javascript:;" class="count">立刻结账</a>
+        			<a href="javascript:;">继续购物>></a>
+        			<a href="javascript:;">凑单推荐>></a>
+        		</div>
+        	</div>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="mt20 bg_shadow recommendwrap">
+          <div class="recommendarea">
+            <div class="recommend-t">
+              <div>
+                <span class=" tab selected">
+                    		疯抢商品
+                </span>
+              </div>
+              <div class="tab-foot">
+                <div class="tab-footer selected"></div>
+              </div>
+            </div>
+            <div class="recommend-b">
+              <div class="mover">
+                <ul class="list">
+                  <li>
+                    <a href="javaacript:void(0);">
+                      <img src="images/S5Q-050-0DH.jpg">
+                      <b class="hot"></b>
+                    </a>
+                    <div class="productname">
+                      <p class="info">
+                          <a href="javascript:void(0);">
+                              ASUS 华硕 X99-E LGA 2011-v3 Intel X99 SATA 6Gb/s USB 3.1 ATX 主板 - Intel
+                          </a>
+                      </p>
+                      <p class="prom null hide"></p>
+
+                    </div>
+                    <div class="shoppingCartIcon"></div>
+                    <div>
+                      <p class="current"><strong class="price">￥899.00</strong></p>
+                    </div>
+                    <a href="javascript:void(0)；" class="egg_btns egg_btns_white mt15">
+                      <span>加入购物车</span>
+                    </a>
+                  </li>
+                   <li>
+                    <a href="javaacript:void(0);">
+                      <img src="images/S5Q-050-0DH.jpg">
+                      <b class="hot"></b>
+                    </a>
+                    <div class="productname">
+                      <p class="info">
+                          <a href="javascript:void(0);">
+                              ASUS 华硕 X99-E LGA 2011-v3 Intel X99 SATA 6Gb/s USB 3.1 ATX 主板 - Intel
+                          </a>
+                      </p>
+                      <p class="prom null hide"></p>
+
+                    </div>
+                    <div class="shoppingCartIcon"></div>
+                    <div>
+                      <p class="current"><strong class="price">￥899.00</strong></p>
+                    </div>
+                    <a href="javascript:void(0)；" class="egg_btns egg_btns_white mt15">
+                      <span>加入购物车</span>
+                    </a>
+                  </li>
+                   <li>
+                    <a href="javaacript:void(0);">
+                      <img src="images/S5Q-050-0DH.jpg">
+                      <b class="hot"></b>
+                    </a>
+                    <div class="productname">
+                      <p class="info">
+                          <a href="javascript:void(0);">
+                              ASUS 华硕 X99-E LGA 2011-v3 Intel X99 SATA 6Gb/s USB 3.1 ATX 主板 - Intel
+                          </a>
+                      </p>
+                      <p class="prom null hide"></p>
+
+                    </div>
+                    <div class="shoppingCartIcon"></div>
+                    <div>
+                      <p class="current"><strong class="price">￥899.00</strong></p>
+                    </div>
+                    <a href="javascript:void(0)；" class="egg_btns egg_btns_white mt15">
+                      <span>加入购物车</span>
+                    </a>
+                  </li>
+                   <li>
+                    <a href="javaacript:void(0);">
+                      <img src="images/S5Q-050-0DH.jpg">
+                      <b class="hot"></b>
+                    </a>
+                    <div class="productname">
+                      <p class="info">
+                          <a href="javascript:void(0);">
+                              ASUS 华硕 X99-E LGA 2011-v3 Intel X99 SATA 6Gb/s USB 3.1 ATX 主板 - Intel
+                          </a>
+                      </p>
+                      <p class="prom null hide"></p>
+
+                    </div>
+                    <div class="shoppingCartIcon"></div>
+                    <div>
+                      <p class="current"><strong class="price">￥899.00</strong></p>
+                    </div>
+                    <a href="javascript:void(0)；" class="egg_btns egg_btns_white mt15">
+                      <span>加入购物车</span>
+                    </a>
+                  </li>
+                   <li>
+                    <a href="javaacript:void(0);">
+                      <img src="images/S5Q-050-0DH.jpg">
+                      <b class="hot"></b>
+                    </a>
+                    <div class="productname">
+                      <p class="info">
+                          <a href="javascript:void(0);">
+                              ASUS 华硕 X99-E LGA 2011-v3 Intel X99 SATA 6Gb/s USB 3.1 ATX 主板 - Intel
+                          </a>
+                      </p>
+                      <p class="prom null hide"></p>
+
+                    </div>
+                    <div class="shoppingCartIcon"></div>
+                    <div>
+                      <p class="current"><strong class="price">￥899.00</strong></p>
+                    </div>
+                    <a href="javascript:void(0)；" class="egg_btns egg_btns_white mt15">
+                      <span>加入购物车</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>
+        新蛋集团网站：
+        <a href="#" class="ml5" style="color:#484848;">美国新蛋</a>
+        <a href="#" class="ml10" style="color:#484848;">中国新蛋</a>
+         <a href="#" class="ml10" style="color:#484848;">加拿大新蛋</a>
+         <a href="#" class="ml10" style="color:#484848;">新蛋软件</a>
+      </p>
+      <p>
+      &copy;&nbsp;2001-2017 新蛋商贸（上海）有限公司 &nbsp;版权所有&nbsp; <a href="#">沪ICP备:16033615</a>
+      </p>
+  </div>
+</body>
+</html>
